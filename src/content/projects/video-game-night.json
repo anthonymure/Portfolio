@@ -1,0 +1,15 @@
+{
+  "order": 11,
+  "slug": "video-game-night",
+  "title": "Video game night",
+  "subtitle": "[Bar name] · Reel",
+  "categories": [
+    "Video"
+  ],
+  "client": "[Bar name]",
+  "year": "[Year]",
+  "role": "[Role]",
+  "duration": "0:59",
+  "context": "Old site: video-game references for a fun, punchy look.",
+  "tone": "#1D2BB8"
+}

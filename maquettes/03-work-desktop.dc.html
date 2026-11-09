@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anthony Mure — Work</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Inter+Tight:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3EEE4}
+a{color:#1A1714;text-decoration:none}a:hover{color:#B8460B}
+.hand{font-family:'Caveat',cursive;font-weight:700}
+.tile{transition:transform .4s ease}.tile:hover{transform:translateY(-4px)}
+.chip{font:inherit;cursor:pointer;border:0;transition:background .2s ease,color .2s ease}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F3EEE4; color: #1A1714; font-family: 'Inter Tight', system-ui, sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(243,238,228,0.92); backdrop-filter: blur(8px)">
+<nav aria-label="Main" style="max-width: 1360px; margin: 0 auto; padding: 22px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="Main.dc.html" style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Anthony Mure</a>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="Work.dc.html" aria-current="page" style="color: #B8460B">Work</a>
+<a href="Services.dc.html">Services</a>
+<a href="About.dc.html">About</a>
+<a href="Contact.dc.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<main style="max-width: 1360px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+
+<section style="padding: 56px 0 40px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<h1 style="margin: 0; font-size: clamp(3.5rem, 8vw, 7.5rem); line-height: 0.92; font-weight: 600; letter-spacing: -0.045em; position: relative"><svg width="56" height="56" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; top: -28px; left: -26px; transform: rotate(-12deg)"><path d="M12 1.5l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 15.7l-5.8 3.6 1.6-6.6L2.6 8.3l6.8-.5z" fill="#1D2BB8"></path></svg>Work<sup style="font-size: 0.28em; font-weight: 500; color: #B8460B; letter-spacing: 0; margin-left: 8px; vertical-align: top">{{count}}</sup></h1>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px">
+<span class="hand" style="font-size: 26px; color: #1D2BB8; transform: rotate(-4deg); margin-right: 24px">pick your vibe ↓</span>
+<div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+<sc-if value="{{f.on}}" hint-placeholder-val="{{ false }}"><button class="chip" type="button" onClick="{{f.pick}}" aria-pressed="true" style="padding: 10px 18px; min-height: 44px; border-radius: 999px; font-size: 15px; font-weight: 500; background: #1D2BB8; color: #F3EEE4">{{f.label}}</button></sc-if>
+<sc-if value="{{f.off}}" hint-placeholder-val="{{ true }}"><button class="chip" type="button" onClick="{{f.pick}}" aria-pressed="false" style="padding: 10px 18px; min-height: 44px; border-radius: 999px; font-size: 15px; font-weight: 500; background: #E8E0D2; color: #4F473E">{{f.label}}</button></sc-if>
+</sc-for>
+</div>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr)); gap: 56px 16px">
+<sc-for list="{{shown}}" as="p" hint-placeholder-count="6">
+<a href="{{p.href}}" class="tile" style="display: block">
+<div style="aspect-ratio: 3 / 2; border-radius: {{radius}}px; background: {{p.tone}}; position: relative; overflow: hidden">
+<span style="position: absolute; top: 16px; left: 16px; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: rgba(243,238,228,0.9); color: #1A1714">{{p.cat}}</span>
+<sc-if value="{{p.sticker}}" hint-placeholder-val="{{ false }}"><span class="hand" style="position: absolute; top: 22px; right: 22px; font-size: 26px; padding: 4px 16px; border-radius: 999px; background: #1D2BB8; color: #F3EEE4; transform: rotate(8deg)">{{p.sticker}}</span></sc-if>
+<sc-if value="{{p.video}}" hint-placeholder-val="{{ false }}">
+<span style="position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 50%; background: #F26A1B; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1A1714"></path></svg></span>
+</sc-if>
+<span style="position: absolute; bottom: 16px; right: 16px; font-size: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(26,23,20,0.55); color: #F3EEE4">{{p.hint}}</span>
+</div>
+<div style="padding-top: 16px; display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
+<div>
+<div style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em">{{p.title}}</div>
+<div style="font-size: 15px; color: #6B6257; margin-top: 4px">{{p.sub}}</div>
+</div>
+<span style="font-size: 14px; color: #6B6257">{{p.year}}</span>
+</div>
+</a>
+</sc-for>
+</div>
+
+<section id="contact" aria-labelledby="cta" style="margin-top: 120px; border-radius: {{radius}}px; background: #F26A1B; position: relative; overflow: hidden; padding: 64px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-end">
+<svg width="90" height="90" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; top: 28px; right: 56px; transform: rotate(10deg)"><path d="M12 0c1 6 5 11 12 12-7 1-11 6-12 12-1-6-5-11-12-12 7-1 11-6 12-12z" fill="#1D2BB8"></path></svg>
+<h2 id="cta" style="margin: 0; font-size: clamp(2.25rem, 5vw, 4.5rem); line-height: 1; font-weight: 600; letter-spacing: -0.04em; max-width: 760px">Interested? Let’s make something together.</h2>
+<a href="Contact.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 18px 28px; border-radius: 999px; background: #1D2BB8; color: #F3EEE4; font-size: 16px; font-weight: 500">Get in touch <span aria-hidden="true">→</span></a>
+</section>
+
+</main>
+
+<footer style="max-width: 1360px; margin: 0 auto; padding: 48px 40px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 14px; color: #6B6257">
+<a href="Contact.dc.html" style="color: #1A1714; font-weight: 500">mure.anthony@gmail.com</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap">
+<a href="#" style="color: #6B6257">Instagram</a>
+<a href="#" style="color: #6B6257">YouTube</a>
+<a href="#" style="color: #6B6257">LinkedIn</a>
+<a href="#" style="color: #6B6257">Legal notice</a>
+</div>
+<span>© 2026 Anthony Mure</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"radius":{"editor":"range","default":28,"min":8,"max":48,"step":2,"unit":"px"},"$preview":{"width":1440,"height":3900}}'>
+class Component extends DCLogic {
+constructor(p) { super(p); this.state = { filter: 'All' }; }
+renderVals() {
+const P = [
+{ title: '[Bar name] — Poster series', sub: 'Graphic design · 60+ posters', year: '2023–26', cats: ['Graphic design'], tone: '#E9C3A2', sticker: '60+ posters!' },
+{ title: 'New Balance 550', sub: 'Product film', year: '[Year]', cats: ['Video'], tone: '#C9B79F' },
+{ title: '[Photo series]', sub: 'Photography · [Client]', year: '[Year]', cats: ['Photography'], tone: '#D8CCBA' },
+{ title: 'Saint-Étienne', sub: 'Personal project · City film', year: '[Year]', cats: ['Video'], tone: '#1D2BB8' },
+{ title: 'New beers launch', sub: '[Bar name] · Reel + photos', year: '[Year]', cats: ['Video', 'Photography'], tone: '#BFB2A1' },
+{ title: 'Magners Cider', sub: 'Poster', year: '[Year]', cats: ['Graphic design'], tone: '#F0D3B6' },
+{ title: 'Burger King cap', sub: 'Concept · Product video', year: '[Year]', cats: ['Video'], tone: '#D1C4B0' },
+{ title: 'Saint-Étienne illustrations', sub: 'Illustration series', year: '2024', cats: ['Graphic design'], tone: '#E3D6C3' },
+{ title: 'Padel event teaser', sub: 'Event · Teaser', year: '[Year]', cats: ['Video'], tone: '#C4B49C' },
+{ title: '[Photo series]', sub: 'Photography · Personal', year: '[Year]', cats: ['Photography'], tone: '#2E2924' },
+{ title: 'Video game night', sub: '[Bar name] · Reel', year: '[Year]', cats: ['Video'], tone: '#1D2BB8' },
+{ title: 'Avamind', sub: '[Project type]', year: '[Year]', cats: ['Graphic design'], tone: '#E9C3A2' }
+];
+const f = this.state.filter;
+const shown = P.filter((p) => f === 'All' || p.cats.indexOf(f) !== -1).map((p) => ({
+...p,
+cat: p.cats.join(' · '),
+href: p.sticker ? 'Posters.dc.html' : 'Project.dc.html',
+video: p.cats.indexOf('Video') !== -1,
+hint: p.cats.indexOf('Video') !== -1 ? 'Muted loop on hover' : 'Image · ' + p.title
+}));
+const filters = ['All', 'Photography', 'Video', 'Graphic design'].map((label) => {
+const on = label === f;
+return { label, on, off: !on, pick: () => this.setState({ filter: label }) };
+});
+return { radius: this.props.radius ?? 28, shown, filters, count: shown.length };
+}
+}
+</script>
+</body>
+</html>

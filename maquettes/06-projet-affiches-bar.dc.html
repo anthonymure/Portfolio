@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>[Bar name] poster series — Anthony Mure</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Inter+Tight:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3EEE4}
+a{color:#1A1714;text-decoration:none}a:hover{color:#B8460B}
+.hand{font-family:'Caveat',cursive;font-weight:700}
+.wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.wide{grid-column:span 2}
+@media (max-width:760px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.poster{border:0;padding:0;margin:0;font:inherit;cursor:zoom-in;display:block;width:100%;text-align:left;transition:transform .3s ease}
+.poster:hover{transform:translateY(-4px) rotate(-0.6deg)}
+.pill{font:inherit;cursor:pointer;border:0}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F3EEE4; color: #1A1714; font-family: 'Inter Tight', system-ui, sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(243,238,228,0.92); backdrop-filter: blur(8px)">
+<nav aria-label="Main" style="max-width: 1360px; margin: 0 auto; padding: 22px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="Main.dc.html" style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Anthony Mure</a>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="Work.dc.html" style="color: #B8460B">Work</a>
+<a href="Services.dc.html">Services</a>
+<a href="About.dc.html">About</a>
+<a href="Contact.dc.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<main style="max-width: 1360px; margin: 0 auto; padding: 0 40px; box-sizing: border-box">
+
+<a href="Work.dc.html" style="display: inline-flex; margin-top: 40px; font-size: 15px; font-weight: 500; color: #6B6257">← All work</a>
+
+<section style="padding: 32px 0 48px; display: flex; flex-wrap: wrap; gap: 32px 64px; justify-content: space-between; align-items: flex-end">
+<div style="position: relative">
+<span style="display: inline-block; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: #1D2BB8; color: #F3EEE4; margin-bottom: 20px">Graphic design</span>
+<h1 style="margin: 0; font-size: clamp(3rem, 7.5vw, 7rem); line-height: 0.92; font-weight: 600; letter-spacing: -0.045em">[Bar name]<br>Poster series</h1>
+<p style="margin: 20px 0 0; font-size: 16px; color: #6B6257">Client: [Bar name] · 2023–2026 · 60+ posters · Design</p>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 20px">
+<span class="hand" style="font-size: 30px; padding: 4px 18px; border-radius: 999px; background: #F26A1B; color: #1A1714; transform: rotate(6deg)">one bar, 60+ posters!</span>
+<p style="margin: 0; max-width: 380px; font-size: 17px; line-height: 1.55; color: #4F473E">Events, theme nights, new drinks: each one got its own poster. Three years of design for the same bar.</p>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+<sc-for list="{{hero}}" as="h" hint-placeholder-count="3">
+<button class="poster" type="button" onClick="{{h.pick}}" aria-label="Enlarge {{h.title}}">
+<div style="aspect-ratio: 2 / 3; border-radius: 28px; background: {{h.tone}}; position: relative">
+<span style="position: absolute; left: 16px; bottom: 16px; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: rgba(243,238,228,0.9); color: #1A1714">{{h.title}}</span>
+</div>
+</button>
+</sc-for>
+</div>
+
+<section aria-labelledby="wall" style="padding-top: 120px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: flex-end; margin-bottom: 32px">
+<h2 id="wall" style="margin: 0; font-size: 40px; font-weight: 600; letter-spacing: -0.03em; display: flex; align-items: center; gap: 14px">The poster wall <svg width="64" height="20" viewBox="0 0 64 20" aria-hidden="true"><path d="M3 13c6-10 10-10 13 0s7 10 13 0 8-10 13 0 7 9 19-2" fill="none" stroke="#1D2BB8" stroke-width="4" stroke-linecap="round"></path></svg></h2>
+<div role="group" aria-label="Sort posters" style="display: flex; gap: 8px">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<sc-if value="{{m.on}}" hint-placeholder-val="{{ false }}"><button class="pill" type="button" onClick="{{m.pick}}" aria-pressed="true" style="padding: 0 18px; min-height: 44px; border-radius: 999px; font-size: 15px; font-weight: 500; background: #1D2BB8; color: #F3EEE4">{{m.label}}</button></sc-if>
+<sc-if value="{{m.off}}" hint-placeholder-val="{{ true }}"><button class="pill" type="button" onClick="{{m.pick}}" aria-pressed="false" style="padding: 0 18px; min-height: 44px; border-radius: 999px; font-size: 15px; font-weight: 500; background: #E8E0D2; color: #4F473E">{{m.label}}</button></sc-if>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 56px">
+<sc-for list="{{groups}}" as="g" hint-placeholder-count="1">
+<div>
+<sc-if value="{{g.heading}}" hint-placeholder-val="{{ false }}"><h3 style="margin: 0 0 16px; font-size: 22px; font-weight: 600; display: flex; align-items: baseline; gap: 12px">{{g.heading}} <span style="font-size: 14px; font-weight: 500; color: #6B6257">{{g.count}}</span></h3></sc-if>
+<div class="wall">
+<sc-for list="{{g.items}}" as="p" hint-placeholder-count="8">
+<sc-if value="{{p.situ}}" hint-placeholder-val="{{ false }}">
+<div class="wide" style="border-radius: 20px; background: #2E2924; position: relative; min-height: 240px">
+<span style="position: absolute; left: 16px; bottom: 16px; font-size: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(243,238,228,0.18); color: #F3EEE4">Photo · posters in place at the bar</span>
+<span class="hand" style="position: absolute; top: 14px; right: 18px; font-size: 24px; color: #F26A1B">in the wild</span>
+</div>
+</sc-if>
+<sc-if value="{{p.poster}}" hint-placeholder-val="{{ true }}">
+<button class="poster" type="button" onClick="{{p.pick}}" aria-label="Enlarge {{p.title}}">
+<div style="aspect-ratio: 2 / 3; border-radius: 20px; background: {{p.tone}}; position: relative">
+<span style="position: absolute; left: 10px; bottom: 10px; right: 10px; font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: rgba(243,238,228,0.9); color: #1A1714; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{p.title}}</span>
+</div>
+</button>
+</sc-if>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 48px">
+<button class="pill" type="button" onClick="{{toggleAll}}" style="min-height: 56px; padding: 0 32px; border-radius: 999px; background: #1A1714; color: #F3EEE4; font-size: 16px; font-weight: 500">{{allLabel}}</button>
+</div>
+</section>
+
+<section aria-label="Next" style="margin-top: 120px; display: flex; flex-wrap: wrap; gap: 16px">
+<a href="Project.dc.html" style="flex: 999 1 560px; min-width: 0; min-height: 260px; border-radius: 28px; background: #E8E0D2; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 32px">
+<span style="font-size: 15px; font-weight: 500; color: #6B6257">Next project →</span>
+<div>
+<div style="font-size: clamp(2.25rem, 4.5vw, 4rem); line-height: 1; font-weight: 600; letter-spacing: -0.04em">New Balance 550</div>
+<div style="font-size: 15px; color: #6B6257; margin-top: 8px">Video · Product film</div>
+</div>
+</a>
+<a href="Contact.dc.html" style="flex: 1 1 320px; min-height: 260px; border-radius: 28px; background: #F26A1B; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
+<span style="font-size: 15px; font-weight: 500">Interested?</span>
+<span style="font-size: 36px; line-height: 1; font-weight: 600; letter-spacing: -0.03em">Get in touch →</span>
+</a>
+</section>
+
+</main>
+
+<footer style="max-width: 1360px; margin: 0 auto; padding: 48px 40px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 14px; color: #6B6257">
+<a href="Contact.dc.html" style="color: #1A1714; font-weight: 500">mure.anthony@gmail.com</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap">
+<a href="#" style="color: #6B6257">Instagram</a>
+<a href="#" style="color: #6B6257">YouTube</a>
+<a href="#" style="color: #6B6257">LinkedIn</a>
+<a href="#" style="color: #6B6257">Legal notice</a>
+</div>
+<span>© 2026 Anthony Mure</span>
+</footer>
+
+<sc-if value="{{open}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="Poster preview" style="position: fixed; inset: 0; z-index: 50; background: rgba(26,23,20,0.88); display: flex; align-items: center; justify-content: center; padding: 32px; box-sizing: border-box">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px">
+<div style="height: min(78vh, 900px); aspect-ratio: 2 / 3; max-width: 86vw; border-radius: 20px; background: {{current.tone}}"></div>
+<div style="display: flex; align-items: center; gap: 16px; color: #F3EEE4">
+<span style="font-size: 16px; font-weight: 500">{{current.title}} · {{current.year}}</span>
+<button class="pill" type="button" onClick="{{close}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; background: #F26A1B; color: #1A1714; font-size: 15px; font-weight: 500">Close ✕</button>
+</div>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4600}}'>
+class Component extends DCLogic {
+constructor(p) { super(p); this.state = { mode: 'best', all: false, open: null }; }
+renderVals() {
+const names = ['Jam All Styles', 'Saint Patrick’s Day', 'Big Eye', 'Valentine’s Day', 'Postertober', 'Day 1', 'Jam All Styles #2', 'Magners Cider'];
+const tones = ['#F26A1B', '#1D2BB8', '#E9C3A2', '#2E2924', '#D8CCBA', '#F0D3B6', '#C9B79F', '#BFB2A1'];
+const years = ['2026', '2025', '2024', '2023'];
+const all = [];
+for (let i = 0; i < 62; i++) {
+all.push({ id: i, title: names[i] || '[Poster title]', tone: tones[(i * 3) % tones.length], year: years[i % 4] });
+}
+const s = this.state;
+const pickOf = (p) => () => this.setState({ open: p.id });
+const asPoster = (p) => ({ ...p, poster: true, situ: false, pick: pickOf(p) });
+const situ = (k) => ({ id: 'situ' + k, poster: false, situ: true });
+let groups;
+if (s.mode === 'best') {
+const list = (s.all ? all : all.slice(3, 27)).map(asPoster);
+list.splice(5, 0, situ(1));
+list.splice(16, 0, situ(2));
+groups = [{ heading: false, items: list }];
+} else {
+groups = years.map((y) => {
+const ys = all.filter((p) => p.year === y);
+const items = (s.all ? ys : ys.slice(0, 8)).map(asPoster);
+return { heading: y, count: ys.length + ' posters', items };
+});
+}
+const current = s.open === null ? { tone: '', title: '', year: '' } : all[s.open];
+return {
+hero: all.slice(0, 3).map(asPoster),
+groups,
+modes: [['best', 'Best first'], ['year', 'By year']].map(([k, label]) => ({ label, on: s.mode === k, off: s.mode !== k, pick: () => this.setState({ mode: k }) })),
+toggleAll: () => this.setState({ all: !s.all }),
+allLabel: s.all ? 'Show a selection' : 'Show all 62 posters',
+open: s.open !== null,
+current,
+close: () => this.setState({ open: null })
+};
+}
+}
+</script>
+</body>
+</html>

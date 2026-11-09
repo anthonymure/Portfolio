@@ -1,0 +1,18 @@
+{
+  "_note": "Projets repris de l'ancien site Wix. Les valeurs entre crochets sont à compléter par Anthony. 'order' = ordre d'affichage (les meilleurs d'abord). 'featured' = affiché sur la Home (4 max). 'categories' : Photography | Video | Graphic design.",
+  "projects": [
+    { "order": 1, "slug": "bar-poster-series", "title": "[Bar name] — Poster series", "subtitle": "Graphic design · 60+ posters", "categories": ["Graphic design"], "client": "[Bar name]", "year": "2023–2026", "role": "Design", "featured": true, "sticker": "60+ posters!", "layout": "poster-wall", "knownPosters": ["Jam All Styles", "Saint Patrick's Day", "Big Eye", "Valentine's Day", "Postertober", "Day 1", "Jam All Styles #2"] },
+    { "order": 2, "slug": "new-balance-550", "title": "New Balance 550", "subtitle": "Product film", "categories": ["Video"], "client": "[Client]", "year": "[Year]", "role": "Direction, filming & editing", "featured": true, "duration": "0:27", "context": "A short product film built around the New Balance 550 — texture, movement and street atmosphere in under 30 seconds." },
+    { "order": 3, "slug": "photo-series-1", "title": "[Photo series]", "subtitle": "Photography · [Client]", "categories": ["Photography"], "client": "[Client]", "year": "[Year]", "role": "Photography", "featured": true },
+    { "order": 4, "slug": "saint-etienne", "title": "Saint-Étienne", "subtitle": "Personal project · City film", "categories": ["Video"], "client": "Personal project", "year": "[Year]", "role": "Direction, filming & editing", "featured": true, "duration": "1:00", "context": "Old site: fictional promotional film about the city of Saint-Étienne." },
+    { "order": 5, "slug": "new-beers-launch", "title": "New beers launch", "subtitle": "[Bar name] · Reel + photos", "categories": ["Video", "Photography"], "client": "[Bar name]", "year": "[Year]", "role": "[Role]", "duration": "0:11", "context": "Old site: made for a bar launching new beers, filmed in the streets of Saint-Étienne." },
+    { "order": 6, "slug": "magners-cider", "title": "Magners Cider", "subtitle": "Poster", "categories": ["Graphic design"], "client": "[Client]", "year": "[Year]", "role": "Design" },
+    { "order": 7, "slug": "burger-king-cap", "title": "Burger King cap", "subtitle": "Concept · Product video", "categories": ["Video"], "client": "Concept (fictional project)", "year": "[Year]", "role": "[Role]", "duration": "0:46" },
+    { "order": 8, "slug": "saint-etienne-illustrations", "title": "Saint-Étienne illustrations", "subtitle": "Illustration series", "categories": ["Graphic design"], "client": "Personal project", "year": "2024", "role": "Illustration" },
+    { "order": 9, "slug": "padel-event-teaser", "title": "Padel event teaser", "subtitle": "Event · Teaser", "categories": ["Video"], "client": "[Client]", "year": "[Year]", "role": "[Role]", "duration": "0:18" },
+    { "order": 10, "slug": "photo-series-2", "title": "[Photo series]", "subtitle": "Photography · Personal", "categories": ["Photography"], "client": "Personal project", "year": "[Year]", "role": "Photography" },
+    { "order": 11, "slug": "video-game-night", "title": "Video game night", "subtitle": "[Bar name] · Reel", "categories": ["Video"], "client": "[Bar name]", "year": "[Year]", "role": "[Role]", "duration": "0:59", "context": "Old site: video-game references for a fun, punchy look." },
+    { "order": 12, "slug": "avamind", "title": "Avamind", "subtitle": "[Project type]", "categories": ["Graphic design"], "client": "[Client]", "year": "[Year]", "role": "[Role]" }
+  ],
+  "notOnNewSiteYet": ["Reel - sortie nouveauté bar (0:10)", "Vidéo projet personnel (0:14)", "Sainte Barbe (0:10)"]
+}

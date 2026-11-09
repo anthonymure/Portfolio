@@ -1,0 +1,16 @@
+{
+  "order": 5,
+  "slug": "new-beers-launch",
+  "title": "New beers launch",
+  "subtitle": "[Bar name] · Reel + photos",
+  "categories": [
+    "Video",
+    "Photography"
+  ],
+  "client": "[Bar name]",
+  "year": "[Year]",
+  "role": "[Role]",
+  "duration": "0:11",
+  "context": "Old site: made for a bar launching new beers, filmed in the streets of Saint-Étienne.",
+  "tone": "#BFB2A1"
+}

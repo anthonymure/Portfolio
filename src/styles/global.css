@@ -1,0 +1,23 @@
+@import '../../design/tokens.css';
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--color-bg);color:var(--color-ink);font-family:var(--font-sans);font-size:var(--text-body);-webkit-font-smoothing:antialiased}
+a{color:var(--color-ink);text-decoration:none}
+a:hover{color:var(--color-orange-text)}
+:focus-visible{outline:3px solid var(--color-blue);outline-offset:3px;border-radius:6px}
+img,video,svg{display:block;max-width:100%}
+.hand{font-family:var(--font-hand);font-weight:700}
+.container{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+.tile{display:block;transition:transform var(--duration) var(--ease)}
+.tile:hover{transform:var(--hover-lift)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.pill-btn{display:inline-flex;align-items:center;gap:10px;min-height:var(--tap-min);padding:18px 28px;border-radius:var(--radius-pill);font-size:16px;font-weight:500}
+.cta{margin-top:var(--section-space);border-radius:var(--radius-card);position:relative;overflow:hidden;padding:64px 48px;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-end}
+.cta h2{margin:0;font-size:clamp(2.25rem,5vw,4.5rem);line-height:1;font-weight:600;letter-spacing:-0.04em;max-width:760px}
+.fade{animation:fade .6s ease both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (max-width:720px){
+  .container{padding:0 var(--gutter-mobile)}
+  .cta{margin-top:var(--section-space-mobile);padding:40px 24px;border-radius:var(--radius-card-mobile)}
+}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}

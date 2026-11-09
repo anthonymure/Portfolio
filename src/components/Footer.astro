@@ -1,0 +1,20 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="container foot">
+  <a href="mailto:mure.anthony@gmail.com" class="mail">mure.anthony@gmail.com</a>
+  <div class="soc">
+    <!-- Liens à confirmer avec Anthony -->
+    <a href="https://instagram.com/honoo_agency">Instagram</a>
+    <a href="https://youtube.com/@B.Berry3">YouTube</a>
+    <a href="https://linkedin.com/in/anthony-mure-3044a9130">LinkedIn</a>
+    <a href="/legal">Legal notice</a>
+  </div>
+  <span>© {year} Anthony Mure</span>
+</footer>
+<style>
+  .foot{padding-top:48px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;font-size:14px;color:var(--color-muted)}
+  .mail{font-weight:500}
+  .soc{display:flex;gap:24px;flex-wrap:wrap}.soc a{color:var(--color-muted);min-height:var(--tap-min);display:inline-flex;align-items:center}
+  .soc a:hover{color:var(--color-orange-text)}
+</style>

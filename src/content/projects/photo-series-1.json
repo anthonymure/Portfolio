@@ -1,0 +1,14 @@
+{
+  "order": 3,
+  "slug": "photo-series-1",
+  "title": "[Photo series]",
+  "subtitle": "Photography · [Client]",
+  "categories": [
+    "Photography"
+  ],
+  "client": "[Client]",
+  "year": "[Year]",
+  "role": "Photography",
+  "featured": true,
+  "tone": "#D8CCBA"
+}

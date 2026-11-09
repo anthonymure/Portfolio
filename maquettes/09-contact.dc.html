@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact — Anthony Mure</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Inter+Tight:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3EEE4}
+a{color:#1A1714;text-decoration:none}a:hover{color:#B8460B}
+.hand{font-family:'Caveat',cursive;font-weight:700}
+.field{width:100%;box-sizing:border-box;font:inherit;font-size:16px;color:#1A1714;background:#F3EEE4;border:1.5px solid transparent;border-radius:16px;padding:14px 16px;min-height:52px}
+.field:focus{outline:none;border-color:#1D2BB8}
+.lbl{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:500}
+.send{font:inherit;cursor:pointer;border:0}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F3EEE4; color: #1A1714; font-family: 'Inter Tight', system-ui, sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(243,238,228,0.92); backdrop-filter: blur(8px)">
+<nav aria-label="Main" style="max-width: 1360px; margin: 0 auto; padding: 22px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="Main.dc.html" style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Anthony Mure</a>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="Work.dc.html">Work</a>
+<a href="Services.dc.html">Services</a>
+<a href="About.dc.html">About</a>
+<a href="Contact.dc.html" aria-current="page" style="color: #B8460B">Contact</a>
+</div>
+</nav>
+</header>
+
+<main style="max-width: 1360px; margin: 0 auto; padding: 56px 40px 0; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px">
+
+<section style="flex: 1 1 420px; border-radius: 28px; background: #1D2BB8; color: #F3EEE4; padding: 48px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 48px; position: relative; overflow: hidden; min-height: 640px">
+<svg width="120" height="120" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; bottom: -20px; right: -16px; transform: rotate(14deg)"><path d="M12 0c1 6 5 11 12 12-7 1-11 6-12 12-1-6-5-11-12-12 7-1 11-6 12-12z" fill="#F26A1B"></path></svg>
+<div>
+<h1 style="margin: 0; font-size: clamp(3.5rem, 7vw, 6.5rem); line-height: 0.92; font-weight: 600; letter-spacing: -0.045em">Let’s<br>talk<span style="color: #F26A1B">.</span></h1>
+<p style="margin: 24px 0 0; max-width: 360px; font-size: 17px; line-height: 1.55; color: #D3D7F7">A shoot, a film, a monthly content plan? Tell me about it.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px; position: relative">
+<a href="mailto:mure.anthony@gmail.com" style="color: #F3EEE4; font-size: 26px; font-weight: 600; letter-spacing: -0.02em">mure.anthony@gmail.com</a>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(243,238,228,0.14); color: #F3EEE4; font-size: 15px; font-weight: 500">Instagram ↗</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(243,238,228,0.14); color: #F3EEE4; font-size: 15px; font-weight: 500">YouTube ↗</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(243,238,228,0.14); color: #F3EEE4; font-size: 15px; font-weight: 500">LinkedIn ↗</a>
+</div>
+</div>
+</section>
+
+<section aria-label="Contact form" style="flex: 999 1 560px; min-width: 0; border-radius: 28px; background: #E8E0D2; padding: 48px; box-sizing: border-box; position: relative">
+<sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+<div style="min-height: 540px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px">
+<span class="hand" style="font-size: 44px; color: #1D2BB8; transform: rotate(-3deg)">message received!</span>
+<p style="margin: 0; font-size: 18px; color: #4F473E">Thanks — I’ll get back to you within [DELAY].</p>
+<button class="send" type="button" onClick="{{reset}}" style="min-height: 48px; padding: 0 22px; border-radius: 999px; background: #F3EEE4; font-size: 15px; font-weight: 500">Send another message</button>
+</div>
+</sc-if>
+<sc-if value="{{notSent}}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{submit}}" style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px">
+<label class="lbl">Name<input class="field" type="text" name="name" placeholder="Your name"></label>
+<label class="lbl">Email<input class="field" type="email" name="email" placeholder="you@example.com"></label>
+</div>
+<label class="lbl">Project type
+<select class="field" name="type">
+<option>Photography</option>
+<option>Video</option>
+<option>Content creation</option>
+<option>Something else</option>
+</select>
+</label>
+<label class="lbl">Message<textarea class="field" name="message" rows="7" placeholder="What, when, where — anything that helps." style="resize: vertical"></textarea></label>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 8px">
+<span class="hand" style="font-size: 24px; color: #1D2BB8">no long brief needed ✓</span>
+<button class="send" type="submit" style="min-height: 56px; padding: 0 32px; border-radius: 999px; background: #F26A1B; color: #1A1714; font-size: 16px; font-weight: 600">Send message →</button>
+</div>
+</form>
+</sc-if>
+</section>
+
+</main>
+
+<footer style="max-width: 1360px; margin: 0 auto; padding: 72px 40px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 14px; color: #6B6257">
+<span style="color: #1A1714; font-weight: 500">Saint-Étienne, France</span>
+<a href="#" style="color: #6B6257">Legal notice</a>
+<span>© 2026 Anthony Mure</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1500}}'>
+class Component extends DCLogic {
+constructor(p) { super(p); this.state = { sent: false }; }
+renderVals() {
+return {
+sent: this.state.sent,
+notSent: !this.state.sent,
+submit: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ sent: true }); },
+reset: () => this.setState({ sent: false })
+};
+}
+}
+</script>
+</body>
+</html>

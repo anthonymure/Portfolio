@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>About — Anthony Mure</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Inter+Tight:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3EEE4}
+a{color:#1A1714;text-decoration:none}a:hover{color:#B8460B}
+.hand{font-family:'Caveat',cursive;font-weight:700}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F3EEE4; color: #1A1714; font-family: 'Inter Tight', system-ui, sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(243,238,228,0.92); backdrop-filter: blur(8px)">
+<nav aria-label="Main" style="max-width: 1360px; margin: 0 auto; padding: 22px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="Main.dc.html" style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Anthony Mure</a>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="Work.dc.html">Work</a>
+<a href="Services.dc.html">Services</a>
+<a href="About.dc.html" aria-current="page" style="color: #B8460B">About</a>
+<a href="Contact.dc.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<main style="max-width: 1360px; margin: 0 auto; padding: 56px 40px 0; box-sizing: border-box">
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 380px; min-height: 640px; border-radius: 28px; background: #F26A1B; position: relative; overflow: hidden">
+<div style="position: absolute; left: 40px; right: 40px; top: 48px; bottom: 0; border-radius: 200px 200px 0 0; background: #C9B79F"></div>
+<span style="position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); font-size: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(26,23,20,0.55); color: #F3EEE4; white-space: nowrap">Photo · portrait of Anthony</span>
+<span class="hand" style="position: absolute; top: 28px; right: 28px; font-size: 30px; padding: 2px 16px; border-radius: 999px; background: #1D2BB8; color: #F3EEE4; transform: rotate(8deg)">that’s me!</span>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; border-radius: 28px; background: #E8E0D2; padding: 48px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 40px">
+<h1 style="margin: 0; font-size: clamp(3rem, 6vw, 6rem); line-height: 0.95; font-weight: 600; letter-spacing: -0.045em">Hi, I’m <span style="position: relative; display: inline-block">Anthony<svg viewBox="0 0 220 24" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: -2%; bottom: -0.14em; width: 104%; height: 0.22em"><path d="M4 16c40-12 92-14 150-7 28 3 44 7 62 1" fill="none" stroke="#1D2BB8" stroke-width="7" stroke-linecap="round"></path></svg></span>.</h1>
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 620px; font-size: 19px; line-height: 1.55; color: #4F473E">
+<p style="margin: 0">I’m a photographer, videographer and content creator based in Saint-Étienne, France.</p>
+<p style="margin: 0">I make images for brands, bars and events: photos, short films, reels and posters. [One or two more sentences about how you work.]</p>
+<p style="margin: 0; color: #1A1714">I sometimes play the model too, with mixed results.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="Contact.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #1A1714; color: #F3EEE4; font-size: 15px; font-weight: 500">Get in touch →</a>
+<a href="Work.dc.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #F3EEE4; font-size: 15px; font-weight: 500">See my work</a>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="clients" style="padding-top: 120px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 32px">
+<h2 id="clients" style="margin: 0; font-size: 40px; font-weight: 600; letter-spacing: -0.03em; display: flex; align-items: center; gap: 14px">They trusted me <svg width="64" height="20" viewBox="0 0 64 20" aria-hidden="true"><path d="M3 13c6-10 10-10 13 0s7 10 13 0 8-10 13 0 7 9 19-2" fill="none" stroke="#F26A1B" stroke-width="4" stroke-linecap="round"></path></svg></h2>
+<span class="hand" style="font-size: 26px; color: #1D2BB8; transform: rotate(-3deg)">and more to come</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px">
+<sc-for list="{{clients}}" as="c" hint-placeholder-count="8">
+<div style="height: 140px; border-radius: 24px; background: #E8E0D2; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; color: #6B6257">{{c}}</div>
+</sc-for>
+</div>
+</section>
+
+</main>
+
+<footer style="max-width: 1360px; margin: 0 auto; padding: 120px 40px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 14px; color: #6B6257">
+<a href="Contact.dc.html" style="color: #1A1714; font-weight: 500">mure.anthony@gmail.com</a>
+<div style="display: flex; gap: 24px; flex-wrap: wrap">
+<a href="#" style="color: #6B6257">Instagram</a>
+<a href="#" style="color: #6B6257">YouTube</a>
+<a href="#" style="color: #6B6257">LinkedIn</a>
+<a href="#" style="color: #6B6257">Legal notice</a>
+</div>
+<span>© 2026 Anthony Mure</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2100}}'>
+class Component extends DCLogic {
+renderVals() {
+return { clients: ['[Bar name]', '[Client logo]', '[Client logo]', '[Client logo]', '[Client logo]', '[Client logo]', '[Client logo]', '[Client logo]'] };
+}
+}
+</script>
+</body>
+</html>

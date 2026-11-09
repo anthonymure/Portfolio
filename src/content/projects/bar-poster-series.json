@@ -1,0 +1,25 @@
+{
+  "order": 1,
+  "slug": "bar-poster-series",
+  "title": "[Bar name] — Poster series",
+  "subtitle": "Graphic design · 60+ posters",
+  "categories": [
+    "Graphic design"
+  ],
+  "client": "[Bar name]",
+  "year": "2023–2026",
+  "role": "Design",
+  "featured": true,
+  "sticker": "60+ posters!",
+  "layout": "poster-wall",
+  "knownPosters": [
+    "Jam All Styles",
+    "Saint Patrick's Day",
+    "Big Eye",
+    "Valentine's Day",
+    "Postertober",
+    "Day 1",
+    "Jam All Styles #2"
+  ],
+  "tone": "#E9C3A2"
+}

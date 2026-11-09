@@ -1,0 +1,39 @@
+---
+const { current = '' } = Astro.props;
+const links = [['Work','/work'],['Services','/services'],['About','/about'],['Contact','/contact']];
+---
+<header>
+  <nav aria-label="Main" class="container bar">
+    <a href="/" class="brand">Anthony Mure</a>
+    <div class="links">
+      {links.map(([l,h]) => <a href={h} aria-current={current===h?'page':undefined}>{l}</a>)}
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" id="menu-btn">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="panel" hidden>
+    {links.map(([l,h]) => <a href={h} class:list={[{contact:l==='Contact'}]}>{l}</a>)}
+  </div>
+</header>
+<script>
+  const b = document.getElementById('menu-btn')!, p = document.getElementById('mobile-menu')!;
+  const set = (open:boolean) => { p.hidden = !open; b.setAttribute('aria-expanded', String(open)); b.textContent = open ? 'Close' : 'Menu'; };
+  b.addEventListener('click', () => set(p.hidden));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !p.hidden) { set(false); b.focus(); } });
+</script>
+<style>
+  header{position:sticky;top:0;z-index:10;background:rgba(243,238,228,.92);backdrop-filter:blur(8px)}
+  .bar{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .links{display:flex;gap:32px;font-size:var(--text-small);font-weight:500}
+  .links a{min-height:var(--tap-min);display:inline-flex;align-items:center}
+  [aria-current=page]{color:var(--color-orange-text)}
+  .menu-btn{display:none;font:inherit;font-size:15px;font-weight:500;min-height:var(--tap-min);padding:0 20px;border:0;border-radius:999px;background:var(--color-ink);color:var(--color-bg);cursor:pointer}
+  .panel{margin:0 var(--gutter-mobile) 12px;padding:24px;border-radius:var(--radius-card-mobile);background:var(--color-dark);display:none;flex-direction:column;gap:8px}
+  .panel a{color:var(--color-bg);font-size:44px;font-weight:600;letter-spacing:-.04em;line-height:1.1;padding:6px 0}
+  .panel a.contact{color:var(--color-orange)}
+  @media (max-width:720px){
+    .links{display:none}.menu-btn{display:inline-block}
+    .bar{padding-top:14px;padding-bottom:14px}
+    .panel:not([hidden]){display:flex}
+  }
+</style>

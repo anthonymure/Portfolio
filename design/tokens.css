@@ -1,0 +1,55 @@
+/* Design tokens — Portfolio Anthony Mure */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter+Tight:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Couleurs */
+  --color-bg: #F3EEE4;          /* fond écru */
+  --color-surface: #E8E0D2;     /* cartes neutres, filtres inactifs */
+  --color-line: #DCD3C4;        /* filets */
+  --color-ink: #1A1714;         /* texte principal, boutons noirs */
+  --color-text: #4F473E;        /* paragraphes */
+  --color-muted: #6B6257;       /* infos, sous-titres */
+  --color-orange: #F26A1B;      /* accent 1 : fonds, boutons, motifs */
+  --color-orange-text: #B8460B; /* orange lisible sur écru (liens actifs, survol) */
+  --color-blue: #1D2BB8;        /* accent 2 : fonds, filtre actif, stickers */
+  --color-on-blue-muted: #D3D7F7;
+  --color-dark: #2E2924;        /* fond showreel / photos sombres */
+  --color-panel: #1F1B17;       /* menu mobile ouvert */
+
+  /* Typographie */
+  --font-sans: 'Inter Tight', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;  /* annotations seulement */
+  --text-hero: clamp(3.5rem, 9vw, 8.75rem);
+  --text-page-title: clamp(3.5rem, 8vw, 7.5rem);
+  --text-h2: 40px;
+  --text-card-title: 30px;
+  --text-body: 17px;
+  --text-small: 15px;
+  --text-label: 13px;
+  --tracking-tight: -0.045em;
+  --leading-tight: 0.92;
+
+  /* Formes */
+  --radius-card: 28px;
+  --radius-card-mobile: 24px;
+  --radius-poster: 20px;
+  --radius-pill: 999px;
+
+  /* Mise en page */
+  --container: 1360px;
+  --gutter: 40px;
+  --gutter-mobile: 16px;
+  --gap-bento: 16px;
+  --section-space: 120px;
+  --section-space-mobile: 72px;
+  --tap-min: 44px;
+
+  /* Mouvement */
+  --ease: ease;
+  --hover-lift: translateY(-4px);
+  --duration: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --duration: 0s; --hover-lift: none; }
+}
