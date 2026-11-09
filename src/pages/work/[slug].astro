@@ -1,31 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import ProjectHead from '../../components/ProjectHead.astro';
-import VideoProject from '../../components/VideoProject.astro';
-import Gallery from '../../components/Gallery.astro';
-import NextCards from '../../components/NextCards.astro';
-import PosterSeries from '../../components/PosterSeries.astro';
-
+import ProjectPage from '../../views/ProjectPage.astro';
 export async function getStaticPaths() {
   const all = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
-  return all.map((project, i) => ({
-    params: { slug: project.data.slug },
-    props: { project, next: all[(i + 1) % all.length] },
-  }));
+  return all.map((project, i) => ({ params: { slug: project.data.slug }, props: { project, next: all[(i + 1) % all.length] } }));
 }
 const { project, next } = Astro.props;
-const p = project.data;
-const isPosters = p.layout === 'poster-wall';
-const isVideo = p.categories.includes('Video');
 ---
-<Base title={p.title} description={`${p.title} — ${p.subtitle}. ${p.categories.join(', ')} project by Anthony Mure.`} current="/work">
-  {isPosters
-    ? <PosterSeries project={project} />
-    : <>
-        <ProjectHead project={project} />
-        {isVideo && <VideoProject project={project} />}
-        <Gallery project={project} label={isVideo ? 'Stills from the film' : 'Images'} />
-      </>}
-  <NextCards next={next} />
-</Base>
+<ProjectPage project={project} next={next} />

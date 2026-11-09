@@ -1,17 +1,20 @@
 ---
-import { Image } from 'astro:assets';
+import { localize } from '../i18n/project';
+import { useT, localePath, type Lang } from '../i18n/ui';
 const { project, showYear = false } = Astro.props;
-const p = project.data;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const p = localize(project, lang);
 const isVideo = p.categories.includes('Video');
-const href = `/work/${p.slug}`;
+const href = localePath(lang, `/work/${p.slug}`);
 ---
 <a href={href} class="tile card">
   <div class="thumb" style={`background:${p.tone}`}>
     {p.image && <img src={p.image} alt={p.imageAlt ?? p.title} loading="lazy" decoding="async" />}
-    <span class="cat">{p.categories.join(' · ')}</span>
+    <span class="cat">{p.categoryLabels.join(' · ')}</span>
     {p.sticker && <span class="hand sticker">{p.sticker}</span>}
     {isVideo && <span class="play" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#1A1714"/></svg></span>}
-    {!p.image && <span class="ph" aria-hidden="true">Image · {p.title}</span>}
+    {!p.image && <span class="ph" aria-hidden="true">{t('proj.imagePh')} · {p.title}</span>}
   </div>
   <div class="meta">
     <div>

@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectHead from '../components/ProjectHead.astro';
+import VideoProject from '../components/VideoProject.astro';
+import Gallery from '../components/Gallery.astro';
+import NextCards from '../components/NextCards.astro';
+import PosterSeries from '../components/PosterSeries.astro';
+import { localize } from '../i18n/project';
+import { useT, type Lang } from '../i18n/ui';
+
+const { project, next } = Astro.props;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const p = localize(project, lang);
+const isPosters = p.layout === 'poster-wall';
+const isVideo = p.categories.includes('Video');
+const desc = `${p.title} — ${p.subtitle}. ${t('proj.metaDesc', { cat: p.categoryLabels.join(', ') })}`;
+---
+<Base title={p.title} description={desc} current="/work">
+  {isPosters
+    ? <PosterSeries project={project} />
+    : <>
+        <ProjectHead project={project} />
+        {isVideo && <VideoProject project={project} />}
+        <Gallery project={project} label={isVideo ? t('proj.stills') : t('proj.images')} />
+      </>}
+  <NextCards next={next} />
+</Base>

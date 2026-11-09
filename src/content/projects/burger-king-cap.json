@@ -10,5 +10,11 @@
   "year": "[Year]",
   "role": "[Role]",
   "duration": "0:46",
-  "tone": "#D1C4B0"
+  "tone": "#D1C4B0",
+  "fr": {
+    "subtitle": "Concept · Vidéo produit",
+    "client": "Concept (projet fictif)",
+    "year": "[Année]",
+    "role": "[Rôle]"
+  }
 }

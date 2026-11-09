@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { useT, localePath, type Lang } from '../i18n/ui';
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const L = (p: string) => localePath(lang, p);
+
+---
+<Base title={t('legal.title')} description={t('legal.desc')}>
+  <article class="legal">
+    <h1>{t('legal.title')}</h1>
+    <!-- Texte à fournir par Anthony : ne pas inventer de mentions légales. -->
+    <h2>{t('legal.publisher')}</h2>
+    <p>{t('legal.publisherText')}<br>{t('legal.email')}{lang === 'fr' ? ' :' : ':'} <a href="mailto:mure.anthony@gmail.com">mure.anthony@gmail.com</a></p>
+    <h2>{t('legal.hosting')}</h2>
+    <p>{t('legal.hostingText')}</p>
+    <h2>{t('legal.ip')}</h2>
+    <p>{t('legal.tbd')}</p>
+    <h2>{t('legal.data')}</h2>
+    <p>{t('legal.tbd')}</p>
+  </article>
+</Base>
+<style>
+  .legal{padding:56px 0 0;max-width:720px}
+  h1{margin:0 0 32px;font-size:var(--text-page-title);line-height:var(--leading-tight);font-weight:600;letter-spacing:var(--tracking-tight)}
+  h2{margin:32px 0 8px;font-size:22px;font-weight:600}
+  p{margin:0;line-height:1.6;color:var(--color-text)}
+  p a{text-decoration:underline}
+</style>

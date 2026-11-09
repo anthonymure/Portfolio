@@ -18,6 +18,7 @@ const projects = defineCollection({
     duration: z.string().optional(),
     context: z.string().optional(),
     knownPosters: z.array(z.string()).optional(),
+    fr: z.object({ title: z.string(), subtitle: z.string(), client: z.string(), year: z.string(), role: z.string(), context: z.string(), sticker: z.string() }).partial().default({}),
     tone: z.string().default('#E3D6C3'),
     // Fournis par Anthony : chemin dans /public (ex. /images/new-balance-550/cover.jpg) + texte alt
     image: z.string().optional(),

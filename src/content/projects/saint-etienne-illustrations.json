@@ -9,5 +9,10 @@
   "client": "Personal project",
   "year": "2024",
   "role": "Illustration",
-  "tone": "#E3D6C3"
+  "tone": "#E3D6C3",
+  "fr": {
+    "subtitle": "Série d’illustrations",
+    "client": "Projet personnel",
+    "role": "Illustration"
+  }
 }

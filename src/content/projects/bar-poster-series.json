@@ -21,5 +21,12 @@
     "Day 1",
     "Jam All Styles #2"
   ],
-  "tone": "#E9C3A2"
+  "tone": "#E9C3A2",
+  "fr": {
+    "title": "[Nom du bar] — Série d’affiches",
+    "subtitle": "Design graphique · 60+ affiches",
+    "client": "[Nom du bar]",
+    "role": "Design",
+    "sticker": "60+ affiches !"
+  }
 }

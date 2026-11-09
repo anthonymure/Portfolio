@@ -1,10 +1,14 @@
 ---
+import { localize } from '../i18n/project';
+import { useT, localePath, type Lang } from '../i18n/ui';
 const { next } = Astro.props;
-const n = next?.data;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const n = next ? localize(next, lang) : undefined;
 ---
 <section aria-label="Next" class="next">
-  {n && <a href={`/work/${n.slug}`} class="tile nx">
-    <span class="lbl">Next project →</span>
+  {n && <a href={localePath(lang, `/work/${n.slug}`)} class="tile nx">
+    <span class="lbl">{t('proj.next')}</span>
     <div class="row">
       <div>
         <div class="nt">{n.title}</div>
@@ -13,10 +17,10 @@ const n = next?.data;
       <div class="mini" aria-hidden="true" style={`background:${n.tone}`}>{n.image && <img src={n.image} alt="" loading="lazy" />}</div>
     </div>
   </a>}
-  <a href="/contact" class="tile touch">
+  <a href={localePath(lang, '/contact')} class="tile touch">
     <svg width="72" height="72" viewBox="0 0 24 24" aria-hidden="true" style="position:absolute;top:24px;right:24px;transform:rotate(12deg)"><path d="M12 0c1 6 5 11 12 12-7 1-11 6-12 12-1-6-5-11-12-12 7-1 11-6 12-12z" fill="var(--color-blue)"/></svg>
-    <span class="lbl" style="color:var(--color-ink)">Interested?</span>
-    <span class="big">Get in touch →</span>
+    <span class="lbl" style="color:var(--color-ink)">{t('proj.interested')}</span>
+    <span class="big">{t('proj.touch')}</span>
   </a>
 </section>
 <style>

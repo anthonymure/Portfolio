@@ -1,13 +1,17 @@
 ---
+import { localize } from '../i18n/project';
+import { useT, localePath, type Lang } from '../i18n/ui';
 const { project } = Astro.props;
-const p = project.data;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const p = localize(project, lang);
 ---
-<a href="/work" class="back">← All work</a>
+<a href={localePath(lang, '/work')} class="back">{t('proj.back')}</a>
 <section class="phead">
   <div>
-    <span class="tag">{p.categories.join(' · ')}</span>
+    <span class="tag">{p.categoryLabels.join(' · ')}</span>
     <h1>{p.title}</h1>
-    <p class="info">Client: {p.client} · {p.year} · {p.role}</p>
+    <p class="info">{t('proj.client')}{lang === 'fr' ? ' :' : ':'} {p.client} · {p.year} · {p.role}</p>
   </div>
   {p.context && <p class="ctx">{p.context}</p>}
 </section>

@@ -10,5 +10,11 @@
   "year": "[Year]",
   "role": "Photography",
   "featured": true,
-  "tone": "#D8CCBA"
+  "tone": "#D8CCBA",
+  "fr": {
+    "title": "[Série photo]",
+    "subtitle": "Photographie · [Client]",
+    "year": "[Année]",
+    "role": "Photographie"
+  }
 }

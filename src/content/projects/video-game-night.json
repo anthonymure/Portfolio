@@ -10,6 +10,13 @@
   "year": "[Year]",
   "role": "[Role]",
   "duration": "0:59",
-  "context": "Old site: video-game references for a fun, punchy look.",
-  "tone": "#1D2BB8"
+  "context": "Video-game references for a fun, punchy look.",
+  "tone": "#1D2BB8",
+  "fr": {
+    "subtitle": "[Nom du bar] · Reel",
+    "client": "[Nom du bar]",
+    "year": "[Année]",
+    "role": "[Rôle]",
+    "context": "Des références de jeux vidéo pour un look fun et percutant."
+  }
 }

@@ -1,9 +1,14 @@
 ---
 import data from '../data/posters.json';
 import Squiggle from './Squiggle.astro';
+import { localize } from '../i18n/project';
+import { useT, localePath, type Lang } from '../i18n/ui';
 const { project } = Astro.props;
-const p = project.data;
-const posters = data.posters;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const p = localize(project, lang);
+// Titres provisoires traduits ; les vrais titres seront ceux d'Anthony.
+const posters = data.posters.map((x) => ({ ...x, title: x.title === '[Poster title]' ? t('posters.placeholder') : x.title }));
 const hero = posters.slice(0, 3);
 const years = [...new Set(posters.map((x) => x.year))].sort().reverse();
 const SELECTION = 24; // affiches visibles avant « Show all »
@@ -11,22 +16,22 @@ const PER_YEAR = 8;
 // Mode « Best first » : la sélection, avec 2 emplacements « photo du bar » glissés dans la grille.
 const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
 ---
-<a href="/work" class="back">← All work</a>
+<a href={localePath(lang, '/work')} class="back">{t('proj.back')}</a>
 <section class="phead">
   <div>
-    <span class="tag">{p.categories.join(' · ')}</span>
-    <h1>[Bar name]<br>Poster series</h1>
-    <p class="info">Client: {p.client} · {p.year} · {data.total} posters · {p.role}</p>
+    <span class="tag">{p.categoryLabels.join(' · ')}</span>
+    <h1>{t('posters.barName')}<br>{t('posters.title')}</h1>
+    <p class="info">{t('proj.client')}{lang === 'fr' ? ' :' : ':'} {p.client} · {p.year} · {data.total} {t('posters.count')} · {p.role}</p>
   </div>
   <div class="side">
-    {p.sticker && <span class="hand st">one bar, {p.sticker}</span>}
-    <p>Events, theme nights, new drinks: each one got its own poster. Three years of design for the same bar.</p>
+    <span class="hand st">{t('posters.sticker')}</span>
+    <p>{t('posters.intro')}</p>
   </div>
 </section>
 
 <div class="hero">
   {hero.map((x) => (
-    <button type="button" class="poster" data-poster data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+    <button type="button" class="poster" data-poster data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`${t('posters.enlarge')} ${x.title}`}>
       <div class="art" style={`background:${x.tone}`}><span class="cap">{x.title}</span></div>
     </button>
   ))}
@@ -34,10 +39,10 @@ const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
 
 <section aria-labelledby="wall" class="wallsec" id="wallsec" data-mode="best">
   <div class="wh">
-    <h2 id="wall">The poster wall <Squiggle /></h2>
-    <div role="group" aria-label="Sort posters" class="modes">
-      <button type="button" class="pill" data-mode="best" aria-pressed="true">Best first</button>
-      <button type="button" class="pill" data-mode="year" aria-pressed="false">By year</button>
+    <h2 id="wall">{t('posters.wall')} <Squiggle /></h2>
+    <div role="group" aria-label={t('posters.sort')} class="modes">
+      <button type="button" class="pill" data-mode="best" aria-pressed="true">{t('posters.best')}</button>
+      <button type="button" class="pill" data-mode="year" aria-pressed="false">{t('posters.byYear')}</button>
     </div>
   </div>
 
@@ -46,11 +51,11 @@ const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
       <>
         {(i === 2 || i === 13) && (
           <div class="wide situ" data-extra={i >= SELECTION ? '' : undefined}>
-            <span class="ph">Photo · posters in place at the bar</span>
-            <span class="hand wild">in the wild</span>
+            <span class="ph">{t('posters.photoPh')}</span>
+            <span class="hand wild">{t('posters.wild')}</span>
           </div>
         )}
-        <button type="button" class="poster" data-poster data-extra={x.extra ? '' : undefined} data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+        <button type="button" class="poster" data-poster data-extra={x.extra ? '' : undefined} data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`${t('posters.enlarge')} ${x.title}`}>
           <div class="art sm" style={`background:${x.tone}`}><span class="cap sm">{x.title}</span></div>
         </button>
       </>
@@ -62,10 +67,10 @@ const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
       const ys = posters.filter((x) => x.year === y);
       return (
         <div>
-          <h3>{y} <span>{ys.length} posters</span></h3>
+          <h3>{y} <span>{ys.length} {t('posters.count')}</span></h3>
           <div class="wall">
             {ys.map((x, i) => (
-              <button type="button" class="poster" data-poster data-extra={i >= PER_YEAR ? '' : undefined} data-id={`y${x.id}`} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+              <button type="button" class="poster" data-poster data-extra={i >= PER_YEAR ? '' : undefined} data-id={`y${x.id}`} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`${t('posters.enlarge')} ${x.title}`}>
                 <div class="art sm" style={`background:${x.tone}`}><span class="cap sm">{x.title}</span></div>
               </button>
             ))}
@@ -75,17 +80,17 @@ const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
     })}
   </div>
 
-  <div class="showall"><button type="button" id="toggle" class="dark" aria-pressed="false" data-all={`Show all ${posters.length} posters`} data-less="Show a selection">Show all {posters.length} posters</button></div>
+  <div class="showall"><button type="button" id="toggle" class="dark" aria-pressed="false" data-all={t('posters.showAll', { n: posters.length })} data-less={t('posters.showLess')}>{t('posters.showAll', { n: posters.length })}</button></div>
 </section>
 
-<dialog id="lb" aria-label="Poster preview">
+<dialog id="lb" aria-label={t('posters.preview')}>
   <div class="lbin">
     <div id="lbart" class="lbart"></div>
     <div class="lbbar">
-      <button type="button" id="prev" class="pill o" aria-label="Previous poster">←</button>
+      <button type="button" id="prev" class="pill o" aria-label={t('posters.prev')}>←</button>
       <span id="lbtitle" class="lbt"></span>
-      <button type="button" id="next" class="pill o" aria-label="Next poster">→</button>
-      <button type="button" id="close" class="pill c">Close ✕</button>
+      <button type="button" id="next" class="pill o" aria-label={t('posters.nextP')}>→</button>
+      <button type="button" id="close" class="pill c">{t('posters.close')}</button>
     </div>
   </div>
 </dialog>

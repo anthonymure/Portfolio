@@ -9,5 +9,10 @@
   "client": "[Client]",
   "year": "[Year]",
   "role": "Design",
-  "tone": "#F0D3B6"
+  "tone": "#F0D3B6",
+  "fr": {
+    "subtitle": "Affiche",
+    "year": "[Année]",
+    "role": "Design"
+  }
 }

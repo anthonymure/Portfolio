@@ -1,38 +1,55 @@
 ---
+import { useT, localePath, switchPath, type Lang } from '../i18n/ui';
 const { current = '' } = Astro.props;
-const links = [['Work','/work'],['Services','/services'],['About','/about'],['Contact','/contact']];
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const other: Lang = lang === 'fr' ? 'en' : 'fr';
+const otherHref = switchPath(lang, Astro.url.pathname);
+const links = [[t('nav.work'), '/work'], [t('nav.services'), '/services'], [t('nav.about'), '/about'], [t('nav.contact'), '/contact']];
 ---
 <header>
-  <nav aria-label="Main" class="container bar">
-    <a href="/" class="brand">Anthony Mure</a>
+  <nav aria-label={t('nav.main')} class="container bar">
+    <a href={localePath(lang, '/')} class="brand">Anthony Mure</a>
     <div class="links">
-      {links.map(([l,h]) => <a href={h} aria-current={current===h?'page':undefined}>{l}</a>)}
+      {links.map(([l, h]) => <a href={localePath(lang, h)} aria-current={current === h ? 'page' : undefined}>{l}</a>)}
     </div>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" id="menu-btn">Menu</button>
+    <div class="right">
+      <a href={otherHref} hreflang={other} lang={other} class="lang" aria-label={t('nav.lang')} id="lang-switch">
+        <span class:list={[{ on: lang === 'fr' }]}>FR</span><span aria-hidden="true">/</span><span class:list={[{ on: lang === 'en' }]}>EN</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" id="menu-btn" data-open={t('nav.close')} data-closed={t('nav.menu')}>{t('nav.menu')}</button>
+    </div>
   </nav>
   <div id="mobile-menu" class="panel" hidden>
-    {links.map(([l,h]) => <a href={h} class:list={[{contact:l==='Contact'}]}>{l}</a>)}
+    {links.map(([l, h]) => <a href={localePath(lang, h)} class:list={[{ contact: h === '/contact' }]}>{l}</a>)}
   </div>
 </header>
 <script>
   const b = document.getElementById('menu-btn')!, p = document.getElementById('mobile-menu')!;
-  const set = (open:boolean) => { p.hidden = !open; b.setAttribute('aria-expanded', String(open)); b.textContent = open ? 'Close' : 'Menu'; };
+  const set = (open: boolean) => { p.hidden = !open; b.setAttribute('aria-expanded', String(open)); b.textContent = open ? b.dataset.open! : b.dataset.closed!; };
   b.addEventListener('click', () => set(p.hidden));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !p.hidden) { set(false); b.focus(); } });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !p.hidden) { set(false); b.focus(); } });
+  // Conserve le filtre / le type de projet (?query) en changeant de langue.
+  const sw = document.getElementById('lang-switch') as HTMLAnchorElement;
+  if (location.search) sw.href += location.search;
 </script>
 <style>
   header{position:sticky;top:0;z-index:10;background:rgba(243,238,228,.92);backdrop-filter:blur(8px)}
   .bar{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
   .brand{font-size:18px;font-weight:600;letter-spacing:-.01em}
-  .links{display:flex;gap:32px;font-size:var(--text-small);font-weight:500}
+  .links{display:flex;gap:32px;font-size:var(--text-small);font-weight:500;margin-left:auto}
   .links a{min-height:var(--tap-min);display:inline-flex;align-items:center}
   [aria-current=page]{color:var(--color-orange-text)}
+  .right{display:flex;align-items:center;gap:12px}
+  .lang{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap-min);padding:0 12px;border-radius:999px;background:var(--color-surface);font-size:14px;font-weight:600;color:var(--color-muted)}
+  .lang .on{color:var(--color-ink)}
+  .lang:hover{color:var(--color-orange-text)}
   .menu-btn{display:none;font:inherit;font-size:15px;font-weight:500;min-height:var(--tap-min);padding:0 20px;border:0;border-radius:999px;background:var(--color-ink);color:var(--color-bg);cursor:pointer}
   .panel{margin:0 var(--gutter-mobile) 12px;padding:24px;border-radius:var(--radius-card-mobile);background:var(--color-dark);display:none;flex-direction:column;gap:8px}
   .panel a{color:var(--color-bg);font-size:44px;font-weight:600;letter-spacing:-.04em;line-height:1.1;padding:6px 0}
   .panel a.contact{color:var(--color-orange)}
   @media (max-width:720px){
-    .links{display:none}.menu-btn{display:inline-block}
+    .links{display:none}.menu-btn{display:inline-block}.right{margin-left:auto}
     .bar{padding-top:14px;padding-bottom:14px}
     .panel:not([hidden]){display:flex}
   }

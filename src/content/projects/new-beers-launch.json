@@ -11,6 +11,13 @@
   "year": "[Year]",
   "role": "[Role]",
   "duration": "0:11",
-  "context": "Old site: made for a bar launching new beers, filmed in the streets of Saint-Étienne.",
-  "tone": "#BFB2A1"
+  "context": "Made for a bar launching new beers, filmed in the streets of Saint-Étienne.",
+  "tone": "#BFB2A1",
+  "fr": {
+    "subtitle": "[Nom du bar] · Reel + photos",
+    "client": "[Nom du bar]",
+    "year": "[Année]",
+    "role": "[Rôle]",
+    "context": "Réalisé pour un bar qui lance de nouvelles bières, tourné dans les rues de Saint-Étienne."
+  }
 }

@@ -10,5 +10,10 @@
   "year": "[Year]",
   "role": "[Role]",
   "duration": "0:18",
-  "tone": "#C4B49C"
+  "tone": "#C4B49C",
+  "fr": {
+    "subtitle": "Événement · Teaser",
+    "year": "[Année]",
+    "role": "[Rôle]"
+  }
 }

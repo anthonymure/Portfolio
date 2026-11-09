@@ -9,7 +9,7 @@ Un portfolio clair qui montre le travail d'Anthony en photo, vidéo et graphisme
 - **Quatre entrées de menu** : Work, Services, About, Contact. Tout en deux clics maximum.
 - **Le travail d'abord** : peu de texte, grandes images.
 - **Personnalité** : base épurée façon « bento » (grandes vignettes arrondies), avec une touche funky : orange, bleu vif et petits motifs dessinés à la main.
-- **Site en anglais.**
+- **Site bilingue** : français par défaut, anglais sous `/en/` (décision du 9 novembre 2026, remplace « site en anglais »).
 
 ## 2. Arborescence et URLs
 

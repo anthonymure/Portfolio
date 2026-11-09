@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Star from '../components/Star.astro';
+import Sparkle from '../components/Sparkle.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { useT, localePath, categoryLabels, type Lang } from '../i18n/ui';
+import { localize } from '../i18n/project';
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const L = (p: string) => localePath(lang, p);
+const projects = (await getCollection('projects')).sort((a,b)=>a.data.order-b.data.order);
+const filters = [[t('work.all'), 'all'], ...(['Photography','Video','Graphic design'] as const).map((c) => [categoryLabels[c][lang], c.toLowerCase().replace(' ','-')])];
+const slug = (c:string)=>c.toLowerCase().replace(/ /g,'-');
+---
+<Base title={t('work.title')} description={t('work.desc')} current="/work">
+  <section class="head">
+    <h1><Star size={56} style="position:absolute;top:-28px;left:-26px;transform:rotate(-12deg)" />{t('work.title')}<sup id="count">{projects.length}</sup></h1>
+    <div class="fil">
+      <span class="hand" aria-hidden="true">{t('work.pick')}</span>
+      <div role="group" aria-label={t('work.filterAria')} class="chips">
+        {filters.map(([l,k]) => <button type="button" class="chip" data-filter={k} aria-pressed={k==='all'?'true':'false'}>{l}</button>)}
+      </div>
+    </div>
+  </section>
+  <div class="grid" id="grid">
+    {projects.map(p => <div class="item" data-cats={p.data.categories.map(slug).join(' ')}><ProjectCard project={p} showYear /></div>)}
+  </div>
+  <p id="empty" hidden>{t('work.empty')}</p>
+
+  <section aria-labelledby="cta" class="cta" style="background:var(--color-orange)">
+    <Sparkle size={90} color="var(--color-blue)" style="position:absolute;top:28px;right:56px;transform:rotate(10deg)" />
+    <h2 id="cta">{t('work.ctaTitle')}</h2>
+    <a href={L('/contact')} class="pill-btn" style="background:var(--color-blue);color:var(--color-bg)">{t('work.ctaBtn')} <span aria-hidden="true">→</span></a>
+  </section>
+</Base>
+<script>
+  const keys = ['all','photography','video','graphic-design'];
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('.chip')];
+  const items = [...document.querySelectorAll<HTMLElement>('.item')];
+  const count = document.getElementById('count')!, empty = document.getElementById('empty')!;
+  function apply(f:string, push:boolean) {
+    let n = 0;
+    items.forEach(i => { const show = f==='all' || i.dataset.cats!.split(' ').includes(f); i.hidden = !show; if (show) n++; });
+    chips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.filter===f)));
+    count.textContent = String(n); empty.hidden = n>0;
+    if (push) { const u = new URL(location.href); f==='all' ? u.searchParams.delete('filter') : u.searchParams.set('filter', f); history.replaceState(null,'',u); }
+  }
+  chips.forEach(c => c.addEventListener('click', () => apply(c.dataset.filter!, true)));
+  const q = new URLSearchParams(location.search).get('filter') ?? 'all';
+  apply(keys.includes(q) ? q : 'all', false);
+</script>
+<style>
+  .head{padding:56px 0 40px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end}
+  h1{margin:0;font-size:var(--text-page-title);line-height:var(--leading-tight);font-weight:600;letter-spacing:var(--tracking-tight);position:relative}
+  sup{font-size:.28em;font-weight:500;color:var(--color-orange-text);letter-spacing:0;margin-left:8px;vertical-align:top}
+  .fil{display:flex;flex-direction:column;align-items:flex-end;gap:6px;min-width:0;max-width:100%}
+  .fil .hand{font-size:26px;color:var(--color-blue);transform:rotate(-4deg);margin-right:24px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font:inherit;cursor:pointer;border:0;padding:10px 18px;min-height:var(--tap-min);border-radius:999px;font-size:15px;font-weight:500;background:var(--color-surface);color:var(--color-text);transition:background .2s ease,color .2s ease;white-space:nowrap}
+  .chip[aria-pressed=true]{background:var(--color-blue);color:var(--color-bg)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:56px 16px}
+  .item[hidden]{display:none}
+  #empty{color:var(--color-muted)}
+  @media (max-width:720px){
+    .head{padding:32px 0 28px}
+    .fil{align-items:flex-start;width:100%}
+    .fil .hand{margin-right:0}
+    .chips{flex-wrap:nowrap;overflow-x:auto;width:calc(100% + 16px);margin-right:-16px;padding-right:16px;scrollbar-width:none}
+  }
+</style>

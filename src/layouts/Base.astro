@@ -2,12 +2,17 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { switchPath, type Lang } from '../i18n/ui';
 const { title, description, current = '' } = Astro.props;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const path = Astro.url.pathname;
+const frUrl = new URL(lang === 'fr' ? path : switchPath('en', path), Astro.site);
+const enUrl = new URL(lang === 'en' ? path : switchPath('fr', path), Astro.site);
 const full = title === 'Anthony Mure' ? title : `${title} — Anthony Mure`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,6 +23,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonical} />
+  <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
+  <link rel="alternate" hreflang="fr" href={frUrl} />
+  <link rel="alternate" hreflang="en" href={enUrl} />
+  <link rel="alternate" hreflang="x-default" href={frUrl} />
   <link rel="icon" href="/motifs/sparkle.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

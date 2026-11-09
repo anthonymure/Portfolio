@@ -1,15 +1,19 @@
 ---
+import { localize } from '../i18n/project';
+import { useT, type Lang } from '../i18n/ui';
 const { project } = Astro.props;
-const p = project.data;
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
+const p = localize(project, lang);
 ---
 <div class="player">
   {p.vimeo
-    ? <iframe src={`https://player.vimeo.com/video/${p.vimeo}?dnt=1`} title={`${p.title} — video`} allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    ? <iframe src={`https://player.vimeo.com/video/${p.vimeo}?dnt=1`} title={`${p.title} — ${t('proj.videoTitle')}`} allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     : <>
         <div class="pc"><span class="pb" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#1A1714"/></svg></span></div>
-        <span class="ph">Video coming soon{p.duration ? ` · ${p.duration}` : ''}</span>
+        <span class="ph">{t('proj.videoSoon')}{p.duration ? ` · ${p.duration}` : ''}</span>
       </>}
-  <span class="hand sound" aria-hidden="true">sound on!</span>
+  <span class="hand sound" aria-hidden="true">{t('proj.sound')}</span>
 </div>
 <style>
   .player{aspect-ratio:16/9;border-radius:var(--radius-card);background:var(--color-dark);position:relative;overflow:hidden;color:var(--color-bg)}

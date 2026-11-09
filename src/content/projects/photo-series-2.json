@@ -9,5 +9,12 @@
   "client": "Personal project",
   "year": "[Year]",
   "role": "Photography",
-  "tone": "#2E2924"
+  "tone": "#2E2924",
+  "fr": {
+    "title": "[Série photo]",
+    "subtitle": "Photographie · Personnel",
+    "client": "Projet personnel",
+    "year": "[Année]",
+    "role": "Photographie"
+  }
 }

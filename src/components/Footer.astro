@@ -1,4 +1,7 @@
 ---
+import { useT, localePath, type Lang } from '../i18n/ui';
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
 const year = new Date().getFullYear();
 ---
 <footer class="container foot">
@@ -8,7 +11,7 @@ const year = new Date().getFullYear();
     <a href="https://instagram.com/honoo_agency">Instagram</a>
     <a href="https://youtube.com/@B.Berry3">YouTube</a>
     <a href="https://linkedin.com/in/anthony-mure-3044a9130">LinkedIn</a>
-    <a href="/legal">Legal notice</a>
+    <a href={localePath(lang, '/legal')}>{t('footer.legal')}</a>
   </div>
   <span>© {year} Anthony Mure</span>
 </footer>

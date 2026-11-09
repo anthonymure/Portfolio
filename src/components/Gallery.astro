@@ -1,10 +1,12 @@
 ---
-const { project, label = 'Images' } = Astro.props;
+import { useT, type Lang } from '../i18n/ui';
+const { project, label } = Astro.props;
+const t = useT((Astro.currentLocale ?? 'fr') as Lang);
 const g = project.data.gallery;
 const tone = project.data.tone;
 // Sans images fournies : 3 emplacements (2 côte à côte + 1 pleine largeur).
 const items = g.length ? g : [
-  { src: '', alt: '', wide: false, ph: 'Image 01' }, { src: '', alt: '', wide: false, ph: 'Image 02' }, { src: '', alt: '', wide: true, ph: 'Image 03 · full width' }];
+  { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 01` }, { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 02` }, { src: '', alt: '', wide: true, ph: `${t('proj.imagePh')} 03 · ${t('proj.fullWidth')}` }];
 // Regroupe : les « wide » seuls, les autres par paire.
 const rows = []; let buf = [];
 for (const it of items) { if (it.wide) { if (buf.length) rows.push(buf), buf = []; rows.push([it]); } else { buf.push(it); if (buf.length === 2) rows.push(buf), buf = []; } }

@@ -1,7 +1,7 @@
 # Portfolio Anthony Mure — instructions pour Claude Code
 
 Tu construis le site portfolio d'Anthony Mure (photo, vidéo, graphisme), basé à Saint-Étienne.
-Le site est **en anglais**. Les échanges avec Anthony se font **en français**.
+Le site est **bilingue : français par défaut (`/`), anglais sous `/en/`**, avec un sélecteur FR/EN dans l'en-tête. Les textes sont dans `src/i18n/ui.ts` ; les titres, sous-titres et rôles des projets ont une version française dans le champ `fr` de chaque fichier `src/content/projects/*.json`. Les échanges avec Anthony se font **en français**.
 
 ## À lire avant de coder
 
