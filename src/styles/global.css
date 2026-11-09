@@ -21,3 +21,4 @@ img,video,svg{display:block;max-width:100%}
   .cta{margin-top:var(--section-space-mobile);padding:40px 24px;border-radius:var(--radius-card-mobile)}
 }
 @media (prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+[hidden]{display:none!important}

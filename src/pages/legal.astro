@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Legal notice" description="Legal notice for the Anthony Mure portfolio website.">
+  <article class="legal">
+    <h1>Legal notice</h1>
+    <!-- Texte à fournir par Anthony : ne pas inventer de mentions légales. -->
+    <h2>Publisher</h2>
+    <p>Anthony Mure, [status / company name], [SIRET], [address], Saint-Étienne, France.<br>Email: <a href="mailto:mure.anthony@gmail.com">mure.anthony@gmail.com</a></p>
+    <h2>Hosting</h2>
+    <p>[Hosting provider name and address]</p>
+    <h2>Intellectual property</h2>
+    <p>[Text to be provided]</p>
+    <h2>Personal data</h2>
+    <p>[Text to be provided]</p>
+  </article>
+</Base>
+<style>
+  .legal{padding:56px 0 0;max-width:720px}
+  h1{margin:0 0 32px;font-size:var(--text-page-title);line-height:var(--leading-tight);font-weight:600;letter-spacing:var(--tracking-tight)}
+  h2{margin:32px 0 8px;font-size:22px;font-weight:600}
+  p{margin:0;line-height:1.6;color:var(--color-text)}
+  p a{text-decoration:underline}
+</style>

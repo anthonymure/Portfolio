@@ -23,6 +23,8 @@ const projects = defineCollection({
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     loop: z.string().optional(),
+    vimeo: z.string().optional(), // ID Vimeo (ex. '123456789')
+    gallery: z.array(z.object({ src: z.string(), alt: z.string(), wide: z.boolean().default(false) })).default([]),
   }),
 });
 export const collections = { projects };

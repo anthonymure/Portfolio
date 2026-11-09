@@ -1,0 +1,185 @@
+---
+import data from '../data/posters.json';
+import Squiggle from './Squiggle.astro';
+const { project } = Astro.props;
+const p = project.data;
+const posters = data.posters;
+const hero = posters.slice(0, 3);
+const years = [...new Set(posters.map((x) => x.year))].sort().reverse();
+const SELECTION = 24; // affiches visibles avant « Show all »
+const PER_YEAR = 8;
+// Mode « Best first » : la sélection, avec 2 emplacements « photo du bar » glissés dans la grille.
+const best = posters.slice(3).map((x, i) => ({ ...x, extra: i >= SELECTION }));
+---
+<a href="/work" class="back">← All work</a>
+<section class="phead">
+  <div>
+    <span class="tag">{p.categories.join(' · ')}</span>
+    <h1>[Bar name]<br>Poster series</h1>
+    <p class="info">Client: {p.client} · {p.year} · {data.total} posters · {p.role}</p>
+  </div>
+  <div class="side">
+    {p.sticker && <span class="hand st">one bar, {p.sticker}</span>}
+    <p>Events, theme nights, new drinks: each one got its own poster. Three years of design for the same bar.</p>
+  </div>
+</section>
+
+<div class="hero">
+  {hero.map((x) => (
+    <button type="button" class="poster" data-poster data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+      <div class="art" style={`background:${x.tone}`}><span class="cap">{x.title}</span></div>
+    </button>
+  ))}
+</div>
+
+<section aria-labelledby="wall" class="wallsec" id="wallsec" data-mode="best">
+  <div class="wh">
+    <h2 id="wall">The poster wall <Squiggle /></h2>
+    <div role="group" aria-label="Sort posters" class="modes">
+      <button type="button" class="pill" data-mode="best" aria-pressed="true">Best first</button>
+      <button type="button" class="pill" data-mode="year" aria-pressed="false">By year</button>
+    </div>
+  </div>
+
+  <div class="wall" data-view="best">
+    {best.map((x, i) => (
+      <>
+        {(i === 2 || i === 13) && (
+          <div class="wide situ" data-extra={i >= SELECTION ? '' : undefined}>
+            <span class="ph">Photo · posters in place at the bar</span>
+            <span class="hand wild">in the wild</span>
+          </div>
+        )}
+        <button type="button" class="poster" data-poster data-extra={x.extra ? '' : undefined} data-id={x.id} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+          <div class="art sm" style={`background:${x.tone}`}><span class="cap sm">{x.title}</span></div>
+        </button>
+      </>
+    ))}
+  </div>
+
+  <div data-view="year" hidden class="years">
+    {years.map((y) => {
+      const ys = posters.filter((x) => x.year === y);
+      return (
+        <div>
+          <h3>{y} <span>{ys.length} posters</span></h3>
+          <div class="wall">
+            {ys.map((x, i) => (
+              <button type="button" class="poster" data-poster data-extra={i >= PER_YEAR ? '' : undefined} data-id={`y${x.id}`} data-title={x.title} data-year={x.year} data-tone={x.tone} aria-label={`Enlarge ${x.title}`}>
+                <div class="art sm" style={`background:${x.tone}`}><span class="cap sm">{x.title}</span></div>
+              </button>
+            ))}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  <div class="showall"><button type="button" id="toggle" class="dark" aria-pressed="false" data-all={`Show all ${posters.length} posters`} data-less="Show a selection">Show all {posters.length} posters</button></div>
+</section>
+
+<dialog id="lb" aria-label="Poster preview">
+  <div class="lbin">
+    <div id="lbart" class="lbart"></div>
+    <div class="lbbar">
+      <button type="button" id="prev" class="pill o" aria-label="Previous poster">←</button>
+      <span id="lbtitle" class="lbt"></span>
+      <button type="button" id="next" class="pill o" aria-label="Next poster">→</button>
+      <button type="button" id="close" class="pill c">Close ✕</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const sec = document.getElementById('wallsec')!;
+  const views = [...sec.querySelectorAll<HTMLElement>('[data-view]')];
+  const modeBtns = [...sec.querySelectorAll<HTMLButtonElement>('[data-mode]')];
+  const toggle = document.getElementById('toggle')!;
+  modeBtns.forEach((b) => b.addEventListener('click', () => {
+    sec.dataset.mode = b.dataset.mode;
+    modeBtns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    views.forEach((v) => (v.hidden = v.dataset.view !== b.dataset.mode));
+  }));
+  toggle.addEventListener('click', () => {
+    const all = sec.classList.toggle('all');
+    toggle.setAttribute('aria-pressed', String(all));
+    toggle.textContent = all ? toggle.dataset.less! : toggle.dataset.all!;
+  });
+
+  const dlg = document.getElementById('lb') as HTMLDialogElement;
+  const art = document.getElementById('lbart')!, title = document.getElementById('lbtitle')!;
+  let list: HTMLElement[] = [], idx = 0, opener: HTMLElement | null = null;
+  const visible = () => [...document.querySelectorAll<HTMLElement>('[data-poster]')].filter((e) => e.offsetParent !== null);
+  function show(i: number) {
+    idx = (i + list.length) % list.length;
+    const e = list[idx];
+    art.style.background = e.dataset.tone!;
+    title.textContent = `${e.dataset.title} · ${e.dataset.year}`;
+  }
+  document.addEventListener('click', (ev) => {
+    const b = (ev.target as HTMLElement).closest<HTMLElement>('[data-poster]');
+    if (!b) return;
+    opener = b; list = visible(); show(list.indexOf(b)); dlg.showModal();
+  });
+  document.getElementById('close')!.addEventListener('click', () => dlg.close());
+  document.getElementById('prev')!.addEventListener('click', () => show(idx - 1));
+  document.getElementById('next')!.addEventListener('click', () => show(idx + 1));
+  dlg.addEventListener('click', (e) => { if (e.target === dlg || (e.target as HTMLElement).classList.contains('lbin')) dlg.close(); });
+  dlg.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); show(idx - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); show(idx + 1); }
+  });
+  dlg.addEventListener('close', () => opener?.focus());
+</script>
+
+<style>
+  .back{display:inline-flex;align-items:center;min-height:var(--tap-min);margin-top:28px;font-size:15px;font-weight:500;color:var(--color-muted)}
+  .phead{padding:24px 0 48px;display:flex;flex-wrap:wrap;gap:32px 64px;justify-content:space-between;align-items:flex-end}
+  .tag{display:inline-block;font-size:13px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--color-blue);color:var(--color-bg);margin-bottom:20px}
+  h1{margin:0;font-size:clamp(3rem,7.5vw,7rem);line-height:.92;font-weight:600;letter-spacing:var(--tracking-tight)}
+  .info{margin:20px 0 0;font-size:16px;color:var(--color-muted)}
+  .side{display:flex;flex-direction:column;align-items:flex-end;gap:20px}
+  .side p{margin:0;max-width:380px;font-size:17px;line-height:1.55;color:var(--color-text)}
+  .st{font-size:30px;padding:4px 18px;border-radius:999px;background:var(--color-orange);color:var(--color-ink);transform:rotate(6deg)}
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+  .poster{border:0;padding:0;margin:0;font:inherit;color:inherit;background:none;cursor:zoom-in;display:block;width:100%;text-align:left;transition:transform .3s ease}
+  .poster:hover{transform:translateY(-4px) rotate(-.6deg)}
+  .art{aspect-ratio:2/3;border-radius:var(--radius-card);position:relative}
+  .art.sm{border-radius:var(--radius-poster)}
+  .cap{position:absolute;left:16px;bottom:16px;font-size:13px;font-weight:500;padding:6px 12px;border-radius:999px;background:rgba(243,238,228,.9)}
+  .cap.sm{left:10px;right:10px;bottom:10px;font-size:12px;padding:5px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .wallsec{padding-top:var(--section-space)}
+  .wh{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-end;margin-bottom:32px}
+  h2#wall{margin:0;font-size:var(--text-h2);font-weight:600;letter-spacing:-.03em;display:flex;align-items:center;gap:14px}
+  .modes{display:flex;gap:8px}
+  .pill{font:inherit;cursor:pointer;border:0;padding:0 18px;min-height:44px;border-radius:999px;font-size:15px;font-weight:500;background:var(--color-surface);color:var(--color-text)}
+  .pill[aria-pressed=true]{background:var(--color-blue);color:var(--color-bg)}
+  .wall{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .wide{grid-column:span 2;border-radius:var(--radius-poster);background:var(--color-dark);position:relative;min-height:240px}
+  .ph{position:absolute;left:16px;bottom:16px;font-size:12px;padding:5px 10px;border-radius:999px;background:rgba(243,238,228,.18);color:var(--color-bg)}
+  .wild{position:absolute;top:14px;right:18px;font-size:24px;color:var(--color-orange)}
+  .years{display:flex;flex-direction:column;gap:56px}
+  .years[hidden]{display:none}
+  h3{margin:0 0 16px;font-size:22px;font-weight:600;display:flex;align-items:baseline;gap:12px}
+  h3 span{font-size:14px;font-weight:500;color:var(--color-muted)}
+  [data-extra]{display:none}
+  .all [data-extra]{display:block}
+  .all .wide[data-extra]{display:block}
+  .showall{display:flex;justify-content:center;margin-top:48px}
+  .dark{font:inherit;cursor:pointer;border:0;min-height:56px;padding:0 32px;border-radius:999px;background:var(--color-ink);color:var(--color-bg);font-size:16px;font-weight:500}
+  dialog{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;color:var(--color-bg)}
+  dialog::backdrop{background:rgba(26,23,20,.88)}
+  .lbin{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px}
+  .lbart{height:min(74vh,900px);aspect-ratio:2/3;max-width:86vw;border-radius:var(--radius-poster)}
+  .lbbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+  .lbt{font-size:16px;font-weight:500}
+  .pill.o{background:rgba(243,238,228,.16);color:var(--color-bg);padding:0 16px}
+  .pill.c{background:var(--color-orange);color:var(--color-ink)}
+  @media (max-width:720px){
+    .wall{grid-template-columns:repeat(2,1fr);gap:12px}
+    .wallsec{padding-top:var(--section-space-mobile)}
+    .art{border-radius:var(--radius-card-mobile)}
+    .side{align-items:flex-start}
+  }
+  @media (prefers-reduced-motion:reduce){.poster:hover{transform:none}}
+</style>

@@ -1,0 +1,377 @@
+{
+ "total": "60+",
+ "posters": [
+  {
+   "id": 0,
+   "title": "Jam All Styles",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 1,
+   "title": "Saint Patrick’s Day",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 2,
+   "title": "Big Eye",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 3,
+   "title": "Valentine’s Day",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 4,
+   "title": "Postertober",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 5,
+   "title": "Day 1",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 6,
+   "title": "Jam All Styles #2",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 7,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 8,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 9,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 10,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 11,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 12,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 13,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 14,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 15,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 16,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 17,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 18,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 19,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 20,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 21,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 22,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 23,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 24,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 25,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 26,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 27,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 28,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 29,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 30,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 31,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 32,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 33,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 34,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 35,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 36,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 37,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 38,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 39,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 40,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 41,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 42,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 43,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 44,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 45,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 46,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 47,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 48,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 49,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 50,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 51,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 52,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 53,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  },
+  {
+   "id": 54,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#E9C3A2"
+  },
+  {
+   "id": 55,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#F0D3B6"
+  },
+  {
+   "id": 56,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#F26A1B"
+  },
+  {
+   "id": 57,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#2E2924"
+  },
+  {
+   "id": 58,
+   "title": "[Poster title]",
+   "year": "2024",
+   "tone": "#C9B79F"
+  },
+  {
+   "id": 59,
+   "title": "[Poster title]",
+   "year": "2023",
+   "tone": "#1D2BB8"
+  },
+  {
+   "id": 60,
+   "title": "[Poster title]",
+   "year": "2026",
+   "tone": "#D8CCBA"
+  },
+  {
+   "id": 61,
+   "title": "[Poster title]",
+   "year": "2025",
+   "tone": "#BFB2A1"
+  }
+ ]
+}
