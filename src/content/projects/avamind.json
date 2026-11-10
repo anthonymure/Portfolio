@@ -2,17 +2,17 @@
   "order": 9,
   "slug": "avamind",
   "title": "Avamind",
-  "subtitle": "[Project type]",
+  "subtitle": "Poster · Personal project",
   "categories": [
     "Graphic design"
   ],
   "client": "Personal project",
-  "year": "[Year]",
+  "year": "2025",
   "role": "[Role]",
   "tone": "#E9C3A2",
   "fr": {
-    "subtitle": "[Type de projet]",
-    "year": "[Année]",
+    "subtitle": "Affiche · Projet personnel",
+    "year": "2025",
     "role": "[Rôle]",
     "client": "Projet personnel"
   },
