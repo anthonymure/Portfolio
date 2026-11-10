@@ -1,0 +1,588 @@
+{
+  "order": 2,
+  "slug": "la-scene-libre",
+  "title": "La Scène Libre",
+  "subtitle": "Concert photography · Music association",
+  "categories": [
+    "Photography"
+  ],
+  "client": "La Scène Libre (music association)",
+  "year": "2026",
+  "role": "Photography",
+  "featured": true,
+  "context": "Concert photos for the music association La Scène Libre.",
+  "fr": {
+    "subtitle": "Photographie de concert · Association musicale",
+    "client": "La Scène Libre (association musicale)",
+    "role": "Photographie",
+    "context": "Photos de concerts pour l’association musicale La Scène Libre."
+  },
+  "tone": "#5a3e6c",
+  "image": "/images/la-scene-libre/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "La Scène Libre, concert — photo 54 sur 70",
+    "en": "La Scène Libre, concert — photo 54 of 70"
+  },
+  "gallery": [
+    {
+      "src": "/images/la-scene-libre/01.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 1 sur 70",
+        "en": "La Scène Libre, concert — photo 1 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/02.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 2 sur 70",
+        "en": "La Scène Libre, concert — photo 2 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/03.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 3 sur 70",
+        "en": "La Scène Libre, concert — photo 3 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/04.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 4 sur 70",
+        "en": "La Scène Libre, concert — photo 4 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/05.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 5 sur 70",
+        "en": "La Scène Libre, concert — photo 5 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/06.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 6 sur 70",
+        "en": "La Scène Libre, concert — photo 6 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/07.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 7 sur 70",
+        "en": "La Scène Libre, concert — photo 7 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/08.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 8 sur 70",
+        "en": "La Scène Libre, concert — photo 8 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/09.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 9 sur 70",
+        "en": "La Scène Libre, concert — photo 9 of 70"
+      },
+      "ratio": 0.667
+    },
+    {
+      "src": "/images/la-scene-libre/10.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 10 sur 70",
+        "en": "La Scène Libre, concert — photo 10 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/11.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 11 sur 70",
+        "en": "La Scène Libre, concert — photo 11 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/12.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 12 sur 70",
+        "en": "La Scène Libre, concert — photo 12 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/13.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 13 sur 70",
+        "en": "La Scène Libre, concert — photo 13 of 70"
+      },
+      "ratio": 0.667
+    },
+    {
+      "src": "/images/la-scene-libre/14.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 14 sur 70",
+        "en": "La Scène Libre, concert — photo 14 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/15.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 15 sur 70",
+        "en": "La Scène Libre, concert — photo 15 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/16.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 16 sur 70",
+        "en": "La Scène Libre, concert — photo 16 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/17.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 17 sur 70",
+        "en": "La Scène Libre, concert — photo 17 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/18.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 18 sur 70",
+        "en": "La Scène Libre, concert — photo 18 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/19.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 19 sur 70",
+        "en": "La Scène Libre, concert — photo 19 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/20.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 20 sur 70",
+        "en": "La Scène Libre, concert — photo 20 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/21.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 21 sur 70",
+        "en": "La Scène Libre, concert — photo 21 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/22.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 22 sur 70",
+        "en": "La Scène Libre, concert — photo 22 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/23.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 23 sur 70",
+        "en": "La Scène Libre, concert — photo 23 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/24.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 24 sur 70",
+        "en": "La Scène Libre, concert — photo 24 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/25.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 25 sur 70",
+        "en": "La Scène Libre, concert — photo 25 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/26.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 26 sur 70",
+        "en": "La Scène Libre, concert — photo 26 of 70"
+      },
+      "ratio": 1.776
+    },
+    {
+      "src": "/images/la-scene-libre/27.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 27 sur 70",
+        "en": "La Scène Libre, concert — photo 27 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/28.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 28 sur 70",
+        "en": "La Scène Libre, concert — photo 28 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/29.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 29 sur 70",
+        "en": "La Scène Libre, concert — photo 29 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/30.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 30 sur 70",
+        "en": "La Scène Libre, concert — photo 30 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/31.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 31 sur 70",
+        "en": "La Scène Libre, concert — photo 31 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/32.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 32 sur 70",
+        "en": "La Scène Libre, concert — photo 32 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/33.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 33 sur 70",
+        "en": "La Scène Libre, concert — photo 33 of 70"
+      },
+      "ratio": 1.776
+    },
+    {
+      "src": "/images/la-scene-libre/34.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 34 sur 70",
+        "en": "La Scène Libre, concert — photo 34 of 70"
+      },
+      "ratio": 1.776
+    },
+    {
+      "src": "/images/la-scene-libre/35.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 35 sur 70",
+        "en": "La Scène Libre, concert — photo 35 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/36.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 36 sur 70",
+        "en": "La Scène Libre, concert — photo 36 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/37.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 37 sur 70",
+        "en": "La Scène Libre, concert — photo 37 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/38.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 38 sur 70",
+        "en": "La Scène Libre, concert — photo 38 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/39.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 39 sur 70",
+        "en": "La Scène Libre, concert — photo 39 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/40.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 40 sur 70",
+        "en": "La Scène Libre, concert — photo 40 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/41.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 41 sur 70",
+        "en": "La Scène Libre, concert — photo 41 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/42.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 42 sur 70",
+        "en": "La Scène Libre, concert — photo 42 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/43.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 43 sur 70",
+        "en": "La Scène Libre, concert — photo 43 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/44.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 44 sur 70",
+        "en": "La Scène Libre, concert — photo 44 of 70"
+      },
+      "ratio": 1.778
+    },
+    {
+      "src": "/images/la-scene-libre/45.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 45 sur 70",
+        "en": "La Scène Libre, concert — photo 45 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/46.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 46 sur 70",
+        "en": "La Scène Libre, concert — photo 46 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/47.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 47 sur 70",
+        "en": "La Scène Libre, concert — photo 47 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/48.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 48 sur 70",
+        "en": "La Scène Libre, concert — photo 48 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/49.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 49 sur 70",
+        "en": "La Scène Libre, concert — photo 49 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/50.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 50 sur 70",
+        "en": "La Scène Libre, concert — photo 50 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/51.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 51 sur 70",
+        "en": "La Scène Libre, concert — photo 51 of 70"
+      },
+      "ratio": 1.776
+    },
+    {
+      "src": "/images/la-scene-libre/52.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 52 sur 70",
+        "en": "La Scène Libre, concert — photo 52 of 70"
+      },
+      "ratio": 1.776
+    },
+    {
+      "src": "/images/la-scene-libre/53.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 53 sur 70",
+        "en": "La Scène Libre, concert — photo 53 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/54.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 54 sur 70",
+        "en": "La Scène Libre, concert — photo 54 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/55.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 55 sur 70",
+        "en": "La Scène Libre, concert — photo 55 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/56.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 56 sur 70",
+        "en": "La Scène Libre, concert — photo 56 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/57.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 57 sur 70",
+        "en": "La Scène Libre, concert — photo 57 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/58.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 58 sur 70",
+        "en": "La Scène Libre, concert — photo 58 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/59.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 59 sur 70",
+        "en": "La Scène Libre, concert — photo 59 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/60.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 60 sur 70",
+        "en": "La Scène Libre, concert — photo 60 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/61.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 61 sur 70",
+        "en": "La Scène Libre, concert — photo 61 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/62.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 62 sur 70",
+        "en": "La Scène Libre, concert — photo 62 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/63.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 63 sur 70",
+        "en": "La Scène Libre, concert — photo 63 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/64.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 64 sur 70",
+        "en": "La Scène Libre, concert — photo 64 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/65.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 65 sur 70",
+        "en": "La Scène Libre, concert — photo 65 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/66.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 66 sur 70",
+        "en": "La Scène Libre, concert — photo 66 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/67.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 67 sur 70",
+        "en": "La Scène Libre, concert — photo 67 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/68.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 68 sur 70",
+        "en": "La Scène Libre, concert — photo 68 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/69.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 69 sur 70",
+        "en": "La Scène Libre, concert — photo 69 of 70"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/la-scene-libre/70.webp",
+      "alt": {
+        "fr": "La Scène Libre, concert — photo 70 sur 70",
+        "en": "La Scène Libre, concert — photo 70 of 70"
+      },
+      "ratio": 0.563
+    }
+  ]
+}

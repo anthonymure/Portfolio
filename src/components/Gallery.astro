@@ -9,14 +9,16 @@ const tone = project.data.tone;
 // Sans images fournies : 3 emplacements (2 côte à côte + 1 pleine largeur).
 const items = (g.length ? g : [
   { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 01` }, { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 02` }, { src: '', alt: '', wide: true, ph: `${t('proj.imagePh')} 03 · ${t('proj.fullWidth')}` }]).map((it) => ({ ...it, wide: it.wide || (it.ratio ?? 0) > 1.2 }));
-// Regroupe : les « wide » seuls, les autres par paire.
+// Regroupe : les « wide » seuls, les autres par paire (par trois quand la série dépasse 12 images).
+const dense = items.length > 12;
+const per = dense ? 3 : 2;
 const rows = []; let buf = [];
-for (const it of items) { if (it.wide) { if (buf.length) rows.push(buf), buf = []; rows.push([it]); } else { buf.push(it); if (buf.length === 2) rows.push(buf), buf = []; } }
+for (const it of items) { if (it.wide) { if (buf.length) rows.push(buf), buf = []; rows.push([it]); } else { buf.push(it); if (buf.length === per) rows.push(buf), buf = []; } }
 if (buf.length) rows.push(buf);
 ---
 <h2 class="gl">{label}</h2>
 <div class="rows">
-  {rows.map(r => <div class:list={['row', {single: r.length === 1}]}>
+  {rows.map(r => <div class:list={['row', { single: r.length === 1, dense }]}>
     {r.map(it => <div class:list={['im', {wide: it.wide}]} style={`background:${tone};${it.ratio ? `aspect-ratio:${it.ratio}` : ''}`}>
       {it.src ? <img src={it.src} alt={pick(it.alt, lang)} loading="lazy" decoding="async" /> : <span class="ph">{it.ph}</span>}
     </div>)}
@@ -28,8 +30,9 @@ if (buf.length) rows.push(buf);
   .row{align-items:start;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
   .im{aspect-ratio:4/5;border-radius:var(--radius-card);position:relative;overflow:hidden}
   .im.wide{aspect-ratio:21/9}
-  .row.single .im:not(.wide){width:min(100%,560px);justify-self:center}
+  .row:not(.dense).single .im:not(.wide){width:min(100%,560px);justify-self:center}
+  .row.dense{grid-template-columns:repeat(3,1fr)}
   .im img{width:100%;height:100%;object-fit:cover}
   .ph{position:absolute;bottom:16px;right:16px;font-size:12px;padding:5px 10px;border-radius:999px;background:rgba(26,23,20,.55);color:var(--color-bg)}
-  @media (max-width:720px){.gl{margin-top:56px}.im{border-radius:var(--radius-card-mobile)}.im.wide{aspect-ratio:3/2}}
+  @media (max-width:720px){.row.dense{grid-template-columns:repeat(2,1fr);gap:10px}.rows{gap:10px}.gl{margin-top:56px}.im{border-radius:var(--radius-card-mobile)}.im.wide{aspect-ratio:3/2}}
 </style>

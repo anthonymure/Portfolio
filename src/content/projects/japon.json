@@ -1,0 +1,245 @@
+{
+  "order": 4,
+  "slug": "japon",
+  "title": "Japan",
+  "subtitle": "Photo series · Personal project",
+  "categories": [
+    "Photography"
+  ],
+  "client": "Personal project",
+  "year": "2023–2026",
+  "role": "Photography",
+  "featured": true,
+  "context": "A photo series made in Japan.",
+  "fr": {
+    "title": "Japon",
+    "subtitle": "Série photo · Projet personnel",
+    "client": "Projet personnel",
+    "role": "Photographie",
+    "context": "Une série photo réalisée au Japon."
+  },
+  "tone": "#745740",
+  "image": "/images/japon/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Japon — photo 24 sur 27",
+    "en": "Japan — photo 24 of 27"
+  },
+  "gallery": [
+    {
+      "src": "/images/japon/01.webp",
+      "alt": {
+        "fr": "Japon — photo 1 sur 27",
+        "en": "Japan — photo 1 of 27"
+      },
+      "ratio": 0.667
+    },
+    {
+      "src": "/images/japon/02.webp",
+      "alt": {
+        "fr": "Japon — photo 2 sur 27",
+        "en": "Japan — photo 2 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/03.webp",
+      "alt": {
+        "fr": "Japon — photo 3 sur 27",
+        "en": "Japan — photo 3 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/04.webp",
+      "alt": {
+        "fr": "Japon — photo 4 sur 27",
+        "en": "Japan — photo 4 of 27"
+      },
+      "ratio": 0.637
+    },
+    {
+      "src": "/images/japon/05.webp",
+      "alt": {
+        "fr": "Japon — photo 5 sur 27",
+        "en": "Japan — photo 5 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/06.webp",
+      "alt": {
+        "fr": "Japon — photo 6 sur 27",
+        "en": "Japan — photo 6 of 27"
+      },
+      "ratio": 0.8
+    },
+    {
+      "src": "/images/japon/07.webp",
+      "alt": {
+        "fr": "Japon — photo 7 sur 27",
+        "en": "Japan — photo 7 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/08.webp",
+      "alt": {
+        "fr": "Japon — photo 8 sur 27",
+        "en": "Japan — photo 8 of 27"
+      },
+      "ratio": 0.703
+    },
+    {
+      "src": "/images/japon/09.webp",
+      "alt": {
+        "fr": "Japon — photo 9 sur 27",
+        "en": "Japan — photo 9 of 27"
+      },
+      "ratio": 0.667
+    },
+    {
+      "src": "/images/japon/10.webp",
+      "alt": {
+        "fr": "Japon — photo 10 sur 27",
+        "en": "Japan — photo 10 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/11.webp",
+      "alt": {
+        "fr": "Japon — photo 11 sur 27",
+        "en": "Japan — photo 11 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/12.webp",
+      "alt": {
+        "fr": "Japon — photo 12 sur 27",
+        "en": "Japan — photo 12 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/13.webp",
+      "alt": {
+        "fr": "Japon — photo 13 sur 27",
+        "en": "Japan — photo 13 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/14.webp",
+      "alt": {
+        "fr": "Japon — photo 14 sur 27",
+        "en": "Japan — photo 14 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/15.webp",
+      "alt": {
+        "fr": "Japon — photo 15 sur 27",
+        "en": "Japan — photo 15 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/16.webp",
+      "alt": {
+        "fr": "Japon — photo 16 sur 27",
+        "en": "Japan — photo 16 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/17.webp",
+      "alt": {
+        "fr": "Japon — photo 17 sur 27",
+        "en": "Japan — photo 17 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/18.webp",
+      "alt": {
+        "fr": "Japon — photo 18 sur 27",
+        "en": "Japan — photo 18 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/19.webp",
+      "alt": {
+        "fr": "Japon — photo 19 sur 27",
+        "en": "Japan — photo 19 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/20.webp",
+      "alt": {
+        "fr": "Japon — photo 20 sur 27",
+        "en": "Japan — photo 20 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/21.webp",
+      "alt": {
+        "fr": "Japon — photo 21 sur 27",
+        "en": "Japan — photo 21 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/22.webp",
+      "alt": {
+        "fr": "Japon — photo 22 sur 27",
+        "en": "Japan — photo 22 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/23.webp",
+      "alt": {
+        "fr": "Japon — photo 23 sur 27",
+        "en": "Japan — photo 23 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/24.webp",
+      "alt": {
+        "fr": "Japon — photo 24 sur 27",
+        "en": "Japan — photo 24 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/25.webp",
+      "alt": {
+        "fr": "Japon — photo 25 sur 27",
+        "en": "Japan — photo 25 of 27"
+      },
+      "ratio": 0.562
+    },
+    {
+      "src": "/images/japon/26.webp",
+      "alt": {
+        "fr": "Japon — photo 26 sur 27",
+        "en": "Japan — photo 26 of 27"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/japon/27.webp",
+      "alt": {
+        "fr": "Japon — photo 27 sur 27",
+        "en": "Japan — photo 27 of 27"
+      },
+      "ratio": 0.563
+    }
+  ]
+}

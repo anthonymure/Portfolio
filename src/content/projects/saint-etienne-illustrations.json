@@ -1,5 +1,5 @@
 {
-  "order": 8,
+  "order": 18,
   "slug": "saint-etienne-illustrations",
   "title": "Saint-Étienne illustrations",
   "subtitle": "Illustration series",
@@ -36,5 +36,6 @@
         "en": "Saint-Étienne illustration: graphic pink and blue buildings"
       }
     }
-  ]
+  ],
+  "featured": false
 }

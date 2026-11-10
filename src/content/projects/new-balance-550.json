@@ -1,5 +1,5 @@
 {
-  "order": 2,
+  "order": 3,
   "slug": "new-balance-550",
   "title": "New Balance 550",
   "subtitle": "Product film",
@@ -18,5 +18,7 @@
     "year": "[Année]",
     "role": "Réalisation, tournage et montage",
     "context": "Un court film produit autour de la New Balance 550 : textures, mouvement et ambiance urbaine en moins de 30 secondes."
-  }
+  },
+  "youtube": "yrz5k53EWKM",
+  "vertical": true
 }

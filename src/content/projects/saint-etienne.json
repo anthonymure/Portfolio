@@ -1,5 +1,5 @@
 {
-  "order": 4,
+  "order": 6,
   "slug": "saint-etienne",
   "title": "Saint-Étienne",
   "subtitle": "Personal project · City film",
@@ -9,7 +9,7 @@
   "client": "Personal project",
   "year": "[Year]",
   "role": "Direction, filming & editing",
-  "featured": true,
+  "featured": false,
   "duration": "1:00",
   "context": "Fictional promotional film about the city of Saint-Étienne.",
   "tone": "#1D2BB8",
@@ -19,5 +19,7 @@
     "year": "[Année]",
     "role": "Réalisation, tournage et montage",
     "context": "Film promotionnel fictif sur la ville de Saint-Étienne."
-  }
+  },
+  "youtube": "9C0fZkVZX8Y",
+  "vertical": true
 }

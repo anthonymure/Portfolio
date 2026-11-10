@@ -1,0 +1,397 @@
+{
+  "order": 5,
+  "slug": "saint-patrick-soggy-bottom",
+  "title": "Saint Patrick at the Soggy Bottom",
+  "subtitle": "Event photography · Soggy Bottom",
+  "categories": [
+    "Photography"
+  ],
+  "client": "Soggy Bottom",
+  "year": "2026",
+  "role": "Photography",
+  "featured": false,
+  "context": "Photos of the Saint Patrick party at the Soggy Bottom.",
+  "fr": {
+    "title": "Saint Patrick au Soggy Bottom",
+    "subtitle": "Photographie d’événement · Soggy Bottom",
+    "client": "Soggy Bottom",
+    "role": "Photographie",
+    "context": "Photos de la soirée Saint Patrick au Soggy Bottom."
+  },
+  "tone": "#2a3b2a",
+  "image": "/images/saint-patrick-soggy-bottom/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Saint Patrick au Soggy Bottom — photo 41 sur 46",
+    "en": "Saint Patrick at the Soggy Bottom — photo 41 of 46"
+  },
+  "gallery": [
+    {
+      "src": "/images/saint-patrick-soggy-bottom/01.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 1 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 1 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/02.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 2 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 2 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/03.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 3 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 3 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/04.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 4 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 4 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/05.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 5 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 5 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/06.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 6 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 6 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/07.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 7 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 7 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/08.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 8 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 8 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/09.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 9 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 9 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/10.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 10 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 10 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/11.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 11 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 11 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/12.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 12 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 12 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/13.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 13 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 13 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/14.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 14 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 14 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/15.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 15 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 15 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/16.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 16 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 16 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/17.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 17 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 17 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/18.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 18 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 18 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/19.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 19 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 19 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/20.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 20 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 20 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/21.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 21 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 21 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/22.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 22 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 22 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/23.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 23 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 23 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/24.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 24 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 24 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/25.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 25 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 25 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/26.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 26 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 26 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/27.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 27 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 27 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/28.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 28 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 28 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/29.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 29 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 29 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/30.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 30 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 30 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/31.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 31 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 31 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/32.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 32 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 32 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/33.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 33 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 33 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/34.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 34 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 34 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/35.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 35 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 35 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/36.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 36 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 36 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/37.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 37 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 37 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/38.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 38 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 38 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/39.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 39 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 39 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/40.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 40 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 40 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/41.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 41 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 41 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/42.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 42 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 42 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/43.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 43 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 43 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/44.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 44 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 44 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/45.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 45 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 45 of 46"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-patrick-soggy-bottom/46.webp",
+      "alt": {
+        "fr": "Saint Patrick au Soggy Bottom — photo 46 sur 46",
+        "en": "Saint Patrick at the Soggy Bottom — photo 46 of 46"
+      },
+      "ratio": 0.563
+    }
+  ]
+}

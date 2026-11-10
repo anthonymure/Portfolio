@@ -25,6 +25,8 @@ const projects = defineCollection({
     imageAlt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]).optional(),
     loop: z.string().optional(),
     vimeo: z.string().optional(), // ID Vimeo (ex. '123456789')
+    youtube: z.string().optional(), // ID YouTube / Short (ex. 'yrz5k53EWKM')
+    vertical: z.boolean().default(false), // vidéo verticale 9:16 (Shorts)
     gallery: z.array(z.object({ src: z.string(), alt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]), wide: z.boolean().default(false), ratio: z.number().optional() })).default([]),
   }),
 });

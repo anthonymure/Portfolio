@@ -1,0 +1,23 @@
+{
+  "order": 15,
+  "slug": "promo-saucisson",
+  "title": "Sausage promo video",
+  "subtitle": "Promo video",
+  "categories": [
+    "Video"
+  ],
+  "client": "[Client]",
+  "year": "[Year]",
+  "role": "[Role]",
+  "featured": false,
+  "youtube": "ABoWHilauoI",
+  "vertical": true,
+  "tone": "#C4B49C",
+  "fr": {
+    "title": "Vidéo promo saucisson",
+    "subtitle": "Vidéo promotionnelle",
+    "client": "[Client]",
+    "year": "[Année]",
+    "role": "[Rôle]"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "order": 11,
+  "order": 22,
   "slug": "video-game-night",
   "title": "Video game night",
   "subtitle": "Soggy Bottom · Reel",
@@ -19,5 +19,6 @@
     "role": "[Rôle]",
     "context": "Des références de jeux vidéo pour un look fun et percutant.",
     "title": "Soirée jeux vidéo"
-  }
+  },
+  "featured": false
 }

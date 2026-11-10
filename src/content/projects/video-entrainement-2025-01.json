@@ -1,0 +1,23 @@
+{
+  "order": 16,
+  "slug": "video-entrainement-2025-01",
+  "title": "Training video project 2025 – 01",
+  "subtitle": "Video project",
+  "categories": [
+    "Video"
+  ],
+  "client": "[Client]",
+  "year": "2025",
+  "role": "[Role]",
+  "featured": false,
+  "youtube": "lQyBTRwS3iw",
+  "vertical": true,
+  "tone": "#C4B49C",
+  "fr": {
+    "title": "Projet vidéo d’entraînement 2025 – 01",
+    "subtitle": "Projet vidéo",
+    "client": "[Client]",
+    "year": "2025",
+    "role": "[Rôle]"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "order": 7,
+  "order": 20,
   "slug": "burger-king-cap",
   "title": "Burger King cap",
   "subtitle": "Concept · Product video",
@@ -17,5 +17,6 @@
     "year": "[Année]",
     "role": "[Rôle]",
     "title": "Casquette Burger King"
-  }
+  },
+  "featured": false
 }

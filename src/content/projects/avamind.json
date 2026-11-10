@@ -1,5 +1,5 @@
 {
-  "order": 12,
+  "order": 9,
   "slug": "avamind",
   "title": "Avamind",
   "subtitle": "[Project type]",
@@ -35,5 +35,6 @@
         "en": "Avamind poster: black-and-white portrait, “Avamind arrives on YouTube”"
       }
     }
-  ]
+  ],
+  "featured": false
 }

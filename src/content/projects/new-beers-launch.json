@@ -1,5 +1,5 @@
 {
-  "order": 5,
+  "order": 17,
   "slug": "new-beers-launch",
   "title": "New beers launch",
   "subtitle": "Soggy Bottom · Reel + photos",
@@ -20,5 +20,6 @@
     "role": "[Rôle]",
     "context": "Réalisé pour un bar qui lance de nouvelles bières, tourné dans les rues de Saint-Étienne.",
     "title": "Lancement des nouvelles bières"
-  }
+  },
+  "featured": false
 }
