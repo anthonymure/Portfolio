@@ -7,16 +7,16 @@
     "Video"
   ],
   "client": "[Client]",
-  "year": "[Year]",
+  "year": "2025",
   "role": "[Role]",
   "featured": false,
   "youtube": "OoAuCqnSSdo",
   "vertical": true,
   "tone": "#3c3c3c",
   "fr": {
-    "subtitle": "Court film",
+    "subtitle": "Court métrage",
     "client": "[Client]",
-    "year": "[Année]",
+    "year": "2025",
     "role": "[Rôle]"
   },
   "image": "/images/le-temps/cover-thumb.webp",

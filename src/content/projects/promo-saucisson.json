@@ -6,8 +6,8 @@
   "categories": [
     "Video"
   ],
-  "client": "[Client]",
-  "year": "[Year]",
+  "client": "Soggy Bottom",
+  "year": "2025",
   "role": "[Role]",
   "featured": false,
   "youtube": "ABoWHilauoI",
@@ -16,8 +16,8 @@
   "fr": {
     "title": "Vidéo promo saucisson",
     "subtitle": "Vidéo promotionnelle",
-    "client": "[Client]",
-    "year": "[Année]",
+    "client": "Soggy Bottom",
+    "year": "2025",
     "role": "[Rôle]"
   },
   "image": "/images/promo-saucisson/cover-thumb.webp",

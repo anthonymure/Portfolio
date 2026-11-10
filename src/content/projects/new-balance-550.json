@@ -7,7 +7,7 @@
     "Video"
   ],
   "client": "[Client]",
-  "year": "[Year]",
+  "year": "2025",
   "role": "Direction, filming & editing",
   "featured": true,
   "duration": "0:27",
@@ -15,7 +15,7 @@
   "tone": "#979697",
   "fr": {
     "subtitle": "Film produit",
-    "year": "[Année]",
+    "year": "2025",
     "role": "Réalisation, tournage et montage",
     "context": "Un court film produit autour de la New Balance 550 : textures, mouvement et ambiance urbaine en moins de 30 secondes."
   },

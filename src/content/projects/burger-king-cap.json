@@ -1,5 +1,5 @@
 {
-  "order": 20,
+  "order": 16,
   "slug": "burger-king-cap",
   "title": "Burger King cap",
   "subtitle": "Concept · Product video",
@@ -7,16 +7,50 @@
     "Video"
   ],
   "client": "Concept (fictional project)",
-  "year": "[Year]",
+  "year": "2025",
   "role": "[Role]",
-  "duration": "0:46",
-  "tone": "#D1C4B0",
+  "tone": "#625337",
   "fr": {
     "subtitle": "Concept · Vidéo produit",
     "client": "Concept (projet fictif)",
-    "year": "[Année]",
+    "year": "2025",
     "role": "[Rôle]",
-    "title": "Casquette Burger King"
+    "title": "Casquette Burger King",
+    "context": "Une vidéo produit pour une casquette Burger King. Un projet fictif."
   },
-  "featured": false
+  "featured": false,
+  "youtube": "lQyBTRwS3iw",
+  "vertical": true,
+  "image": "/images/burger-king-cap/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Portrait de profil d’un homme à lunettes",
+    "en": "Side portrait of a man wearing glasses"
+  },
+  "gallery": [
+    {
+      "src": "/images/burger-king-cap/still-1.webp",
+      "alt": {
+        "fr": "Portrait de profil d’un homme à lunettes",
+        "en": "Side portrait of a man wearing glasses"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/burger-king-cap/still-2.webp",
+      "alt": {
+        "fr": "Deux hommes dans une rue bordée d’immeubles rouges, avec la mention « FIN ? »",
+        "en": "Two men on a street lined with red buildings, with the text “FIN ?”"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/burger-king-cap/still-3.webp",
+      "alt": {
+        "fr": "Un homme en veste en jean soulevant sa casquette",
+        "en": "A man in a denim jacket lifting his cap"
+      },
+      "ratio": 0.563
+    }
+  ],
+  "context": "A product video for a Burger King cap. A fictional project."
 }

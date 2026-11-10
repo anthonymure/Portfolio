@@ -2,23 +2,23 @@
   "order": 6,
   "slug": "saint-etienne",
   "title": "Saint-Étienne",
-  "subtitle": "Personal project · City film",
+  "subtitle": "Personal project · Cinematic film",
   "categories": [
     "Video"
   ],
   "client": "Personal project",
-  "year": "[Year]",
+  "year": "2025",
   "role": "Direction, filming & editing",
   "featured": false,
   "duration": "1:00",
-  "context": "Fictional promotional film about the city of Saint-Étienne.",
+  "context": "A cinematic film about the city of Saint-Étienne.",
   "tone": "#504839",
   "fr": {
-    "subtitle": "Projet personnel · Film sur la ville",
+    "subtitle": "Projet personnel · Film cinématique",
     "client": "Projet personnel",
-    "year": "[Année]",
+    "year": "2025",
     "role": "Réalisation, tournage et montage",
-    "context": "Film promotionnel fictif sur la ville de Saint-Étienne."
+    "context": "Un film cinématique sur la ville de Saint-Étienne."
   },
   "youtube": "9C0fZkVZX8Y",
   "vertical": true,
