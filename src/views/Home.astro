@@ -29,13 +29,14 @@ const what = (['Photography','Video','Graphic design'] as const).map((c) => [cat
   </section>
 
   <section aria-label="Showreel and quick links" class="bento">
-    <!-- TODO Anthony : showreel (vidéo en boucle plein cadre) -->
-    <a href={L('/work')} class="tile reel" aria-label={t('home.showreelAria')}>
+    <div class="tile reel" id="reel" data-yt="ZVvlu6oplPk" data-title="LOIRE CINEMATIC — Château de Sail-sous-Couzan">
+      <img class="reelimg" src="/images/home/showreel.webp" alt="" width="1600" height="900" loading="eager" />
+      <button type="button" class="reelbtn" aria-label={t('home.showreelAria')}></button>
       <div class="playwrap"><div class="playbtn"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1A1714"/></svg></div></div>
       <div class="press"><span class="hand">{t('home.press')}</span><svg width="64" height="48" viewBox="0 0 64 48" aria-hidden="true"><path d="M4 8c22-2 42 8 50 30M42 34l12 6 3-13" fill="none" stroke="var(--color-orange)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <svg class="wave" width="150" height="60" viewBox="0 0 150 60" aria-hidden="true"><path d="M6 40c14-26 22-26 26 0s14 26 26 0 16-26 26 0 14 26 26 0 12-20 34-14" fill="none" stroke="#F3EEE4" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/></svg>
       <div class="reelfoot"><span>{t('home.showreel')}</span></div>
-    </a>
+    </div>
     <div class="col">
       <div class="orange">
         <span class="lab">{t('home.whatIDo')}</span>
@@ -85,6 +86,10 @@ const what = (['Photography','Video','Graphic design'] as const).map((c) => [cat
   .side p{margin:0;max-width:340px;font-size:17px;line-height:1.5;color:var(--color-muted)}
   .bento{display:flex;flex-wrap:wrap;gap:var(--gap-bento)}
   .reel{flex:999 1 560px;min-width:0;height:560px;border-radius:var(--radius-card);background:var(--color-dark);position:relative;overflow:hidden;color:var(--color-bg)}
+  .reelimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+  .reelbtn{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;cursor:pointer;z-index:2}
+  .reelbtn:focus-visible{outline:3px solid var(--color-orange);outline-offset:-6px}
+  .reel :global(iframe){position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
   .playwrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
   .playbtn{width:88px;height:88px;border-radius:50%;background:var(--color-orange);display:flex;align-items:center;justify-content:center}
   .press{position:absolute;top:32px;left:36px;display:flex;align-items:flex-end;gap:4px;transform:rotate(-6deg)}
@@ -118,3 +123,15 @@ const what = (['Photography','Video','Graphic design'] as const).map((c) => [cat
     .wave{display:none}
   }
 </style>
+<script>
+  const reel = document.getElementById('reel');
+  reel?.querySelector('.reelbtn')?.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube-nocookie.com/embed/${reel.dataset.yt}?autoplay=1&rel=0`;
+    f.title = reel.dataset.title ?? '';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    reel.append(f);
+    f.focus();
+  });
+</script>
