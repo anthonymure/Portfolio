@@ -28,5 +28,10 @@
     "client": "[Nom du bar]",
     "role": "Design",
     "sticker": "60+ affiches !"
+  },
+  "image": "/images/posters/jam-all-styles-2-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche Jam all styles du bar",
+    "en": "Jam all styles poster for the bar"
   }
 }

@@ -1,7 +1,9 @@
 ---
 import { useT, type Lang } from '../i18n/ui';
+import { pick } from '../i18n/project';
 const { project, label } = Astro.props;
-const t = useT((Astro.currentLocale ?? 'fr') as Lang);
+const lang = (Astro.currentLocale ?? 'fr') as Lang;
+const t = useT(lang);
 const g = project.data.gallery;
 const tone = project.data.tone;
 // Sans images fournies : 3 emplacements (2 côte à côte + 1 pleine largeur).
@@ -16,7 +18,7 @@ if (buf.length) rows.push(buf);
 <div class="rows">
   {rows.map(r => <div class:list={['row', {single: r.length === 1}]}>
     {r.map(it => <div class:list={['im', {wide: it.wide}]} style={`background:${tone}`}>
-      {it.src ? <img src={it.src} alt={it.alt} loading="lazy" decoding="async" /> : <span class="ph">{it.ph}</span>}
+      {it.src ? <img src={it.src} alt={pick(it.alt, lang)} loading="lazy" decoding="async" /> : <span class="ph">{it.ph}</span>}
     </div>)}
   </div>)}
 </div>

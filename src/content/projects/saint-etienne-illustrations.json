@@ -14,5 +14,26 @@
     "subtitle": "Série d’illustrations",
     "client": "Projet personnel",
     "role": "Illustration"
-  }
+  },
+  "image": "/images/saint-etienne-illustrations/illustration-1-thumb.webp",
+  "imageAlt": {
+    "fr": "Illustration de Saint-Étienne : façade d’immeuble, « la ville du design »",
+    "en": "Saint-Étienne illustration: building facade, “the city of design”"
+  },
+  "gallery": [
+    {
+      "src": "/images/saint-etienne-illustrations/illustration-1.webp",
+      "alt": {
+        "fr": "Illustration de Saint-Étienne : façade d’immeuble, « la ville du design »",
+        "en": "Saint-Étienne illustration: building facade, “the city of design”"
+      }
+    },
+    {
+      "src": "/images/saint-etienne-illustrations/illustration-2.webp",
+      "alt": {
+        "fr": "Illustration de Saint-Étienne : immeubles aux lignes graphiques, rose et bleu",
+        "en": "Saint-Étienne illustration: graphic pink and blue buildings"
+      }
+    }
+  ]
 }

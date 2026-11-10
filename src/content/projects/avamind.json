@@ -14,5 +14,26 @@
     "subtitle": "[Type de projet]",
     "year": "[Année]",
     "role": "[Rôle]"
-  }
+  },
+  "image": "/images/avamind/poster-2-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche Avamind : portrait en rouge et jaune, annonce d’un DJ set Twitch",
+    "en": "Avamind poster: red and yellow portrait, Twitch DJ set announcement"
+  },
+  "gallery": [
+    {
+      "src": "/images/avamind/poster-2.webp",
+      "alt": {
+        "fr": "Affiche Avamind : portrait en rouge et jaune, annonce d’un DJ set Twitch",
+        "en": "Avamind poster: red and yellow portrait, Twitch DJ set announcement"
+      }
+    },
+    {
+      "src": "/images/avamind/poster-1.webp",
+      "alt": {
+        "fr": "Affiche Avamind : portrait en noir et blanc, « Avamind débarque sur YouTube »",
+        "en": "Avamind poster: black-and-white portrait, “Avamind arrives on YouTube”"
+      }
+    }
+  ]
 }

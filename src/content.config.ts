@@ -22,10 +22,10 @@ const projects = defineCollection({
     tone: z.string().default('#E3D6C3'),
     // Fournis par Anthony : chemin dans /public (ex. /images/new-balance-550/cover.jpg) + texte alt
     image: z.string().optional(),
-    imageAlt: z.string().optional(),
+    imageAlt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]).optional(),
     loop: z.string().optional(),
     vimeo: z.string().optional(), // ID Vimeo (ex. '123456789')
-    gallery: z.array(z.object({ src: z.string(), alt: z.string(), wide: z.boolean().default(false) })).default([]),
+    gallery: z.array(z.object({ src: z.string(), alt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]), wide: z.boolean().default(false) })).default([]),
   }),
 });
 export const collections = { projects };

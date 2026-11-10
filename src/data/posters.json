@@ -2,376 +2,268 @@
  "total": "60+",
  "posters": [
   {
-   "id": 0,
-   "title": "Jam All Styles",
-   "year": "2026",
-   "tone": "#F26A1B"
+   "id": "jam-all-styles-2",
+   "title": "Jam all styles #2",
+   "year": null,
+   "src": "/images/posters/jam-all-styles-2.webp",
+   "thumb": "/images/posters/jam-all-styles-2-thumb.webp",
+   "tone": "#3d5b33"
   },
   {
-   "id": 1,
-   "title": "Saint Patrick’s Day",
-   "year": "2025",
-   "tone": "#2E2924"
+   "id": "saint-valentin",
+   "title": "Saint-Valentin",
+   "year": null,
+   "src": "/images/posters/saint-valentin.webp",
+   "thumb": "/images/posters/saint-valentin-thumb.webp",
+   "tone": "#c04749"
   },
   {
-   "id": 2,
-   "title": "Big Eye",
-   "year": "2024",
-   "tone": "#C9B79F"
+   "id": "halloween",
+   "title": "Halloween",
+   "year": null,
+   "src": "/images/posters/halloween.webp",
+   "thumb": "/images/posters/halloween-thumb.webp",
+   "tone": "#a47a60"
   },
   {
-   "id": 3,
-   "title": "Valentine’s Day",
-   "year": "2023",
-   "tone": "#1D2BB8"
+   "id": "jam-all-styles",
+   "title": "Jam all styles",
+   "year": null,
+   "src": "/images/posters/jam-all-styles.webp",
+   "thumb": "/images/posters/jam-all-styles-thumb.webp",
+   "tone": "#997744"
   },
   {
-   "id": 4,
-   "title": "Postertober",
-   "year": "2026",
-   "tone": "#D8CCBA"
+   "id": "saint-patrick",
+   "title": "Saint Patrick",
+   "year": null,
+   "src": "/images/posters/saint-patrick.webp",
+   "thumb": "/images/posters/saint-patrick-thumb.webp",
+   "tone": "#babc8f"
   },
   {
-   "id": 5,
-   "title": "Day 1",
-   "year": "2025",
-   "tone": "#BFB2A1"
+   "id": "saint-patrick-2",
+   "title": "Saint Patrick #2",
+   "year": null,
+   "src": "/images/posters/saint-patrick-2.webp",
+   "thumb": "/images/posters/saint-patrick-2-thumb.webp",
+   "tone": "#6f6c8a"
   },
   {
-   "id": 6,
-   "title": "Jam All Styles #2",
-   "year": "2024",
-   "tone": "#E9C3A2"
+   "id": "jam-jazz",
+   "title": "Jam jazz",
+   "year": null,
+   "src": "/images/posters/jam-jazz.webp",
+   "thumb": "/images/posters/jam-jazz-thumb.webp",
+   "tone": "#8e8770"
   },
   {
-   "id": 7,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
+   "id": "jam-jazz-juin",
+   "title": "Jam jazz juin",
+   "year": null,
+   "src": "/images/posters/jam-jazz-juin.webp",
+   "thumb": "/images/posters/jam-jazz-juin-thumb.webp",
+   "tone": "#e2c47f"
   },
   {
-   "id": 8,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
+   "id": "jam-jazz-mai",
+   "title": "Jam jazz mai",
+   "year": null,
+   "src": "/images/posters/jam-jazz-mai.webp",
+   "thumb": "/images/posters/jam-jazz-mai-thumb.webp",
+   "tone": "#b7a38b"
   },
   {
-   "id": 9,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
+   "id": "jam-rock",
+   "title": "Jam rock",
+   "year": null,
+   "src": "/images/posters/jam-rock.webp",
+   "thumb": "/images/posters/jam-rock-thumb.webp",
+   "tone": "#5b2c2b"
   },
   {
-   "id": 10,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
+   "id": "jam-rock-2",
+   "title": "Jam rock #2",
+   "year": null,
+   "src": "/images/posters/jam-rock-2.webp",
+   "thumb": "/images/posters/jam-rock-2-thumb.webp",
+   "tone": "#9ba78f"
   },
   {
-   "id": 11,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
+   "id": "jam-rock-juin",
+   "title": "Jam rock juin",
+   "year": null,
+   "src": "/images/posters/jam-rock-juin.webp",
+   "thumb": "/images/posters/jam-rock-juin-thumb.webp",
+   "tone": "#726d5e"
   },
   {
-   "id": 12,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
+   "id": "jam-metal",
+   "title": "Jam metal",
+   "year": null,
+   "src": "/images/posters/jam-metal.webp",
+   "thumb": "/images/posters/jam-metal-thumb.webp",
+   "tone": "#181818"
   },
   {
-   "id": 13,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
+   "id": "jam-metal-2",
+   "title": "Jam metal #2",
+   "year": null,
+   "src": "/images/posters/jam-metal-2.webp",
+   "thumb": "/images/posters/jam-metal-2-thumb.webp",
+   "tone": "#4c393e"
   },
   {
-   "id": 14,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
+   "id": "jam-metal-3",
+   "title": "Jam metal #3",
+   "year": null,
+   "src": "/images/posters/jam-metal-3.webp",
+   "thumb": "/images/posters/jam-metal-3-thumb.webp",
+   "tone": "#525252"
   },
   {
-   "id": 15,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
+   "id": "jam-metal-4",
+   "title": "Jam metal #4",
+   "year": null,
+   "src": "/images/posters/jam-metal-4.webp",
+   "thumb": "/images/posters/jam-metal-4-thumb.webp",
+   "tone": "#283856"
   },
   {
-   "id": 16,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
+   "id": "jam-metal-5",
+   "title": "Jam metal #5",
+   "year": null,
+   "src": "/images/posters/jam-metal-5.webp",
+   "thumb": "/images/posters/jam-metal-5-thumb.webp",
+   "tone": "#8a473e"
   },
   {
-   "id": 17,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
+   "id": "jam-pop-rock",
+   "title": "Jam pop rock",
+   "year": null,
+   "src": "/images/posters/jam-pop-rock.webp",
+   "thumb": "/images/posters/jam-pop-rock-thumb.webp",
+   "tone": "#926c58"
   },
   {
-   "id": 18,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
+   "id": "jam-all-styles-3",
+   "title": "Jam all styles #3",
+   "year": null,
+   "src": "/images/posters/jam-all-styles-3.webp",
+   "thumb": "/images/posters/jam-all-styles-3-thumb.webp",
+   "tone": "#304123"
   },
   {
-   "id": 19,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
+   "id": "halloween-2",
+   "title": "Halloween #2",
+   "year": null,
+   "src": "/images/posters/halloween-2.webp",
+   "thumb": "/images/posters/halloween-2-thumb.webp",
+   "tone": "#38400c"
   },
   {
-   "id": 20,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
+   "id": "inktober",
+   "title": "Inktober",
+   "year": null,
+   "src": "/images/posters/inktober.webp",
+   "thumb": "/images/posters/inktober-thumb.webp",
+   "tone": "#ac6934"
   },
   {
-   "id": 21,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
+   "id": "ici-cest-le-soggy",
+   "title": "Ici c’est le Soggy",
+   "year": null,
+   "src": "/images/posters/ici-cest-le-soggy.webp",
+   "thumb": "/images/posters/ici-cest-le-soggy-thumb.webp",
+   "tone": "#e3e3e3"
   },
   {
-   "id": 22,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
+   "id": "stand-up",
+   "title": "Stand up",
+   "year": null,
+   "src": "/images/posters/stand-up.webp",
+   "thumb": "/images/posters/stand-up-thumb.webp",
+   "tone": "#c97a28"
   },
   {
-   "id": 23,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
+   "id": "illustration-soggy",
+   "title": "Illustration Soggy",
+   "year": null,
+   "src": "/images/posters/illustration-soggy.webp",
+   "thumb": "/images/posters/illustration-soggy-thumb.webp",
+   "tone": "#e1e1e1"
   },
   {
-   "id": 24,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
+   "id": "beaujolais-nouveau",
+   "title": "Soirée Beaujolais nouveau",
+   "year": null,
+   "src": "/images/posters/beaujolais-nouveau.webp",
+   "thumb": "/images/posters/beaujolais-nouveau-thumb.webp",
+   "tone": "#9a7e75"
   },
   {
-   "id": 25,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
+   "id": "before-techno",
+   "title": "Before techno",
+   "year": null,
+   "src": "/images/posters/before-techno.webp",
+   "thumb": "/images/posters/before-techno-thumb.webp",
+   "tone": "#b6b5b6"
   },
   {
-   "id": 26,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
+   "id": "delirium-paranoia",
+   "title": "Délirium & Paranoïa",
+   "year": null,
+   "src": "/images/posters/delirium-paranoia.webp",
+   "thumb": "/images/posters/delirium-paranoia-thumb.webp",
+   "tone": "#575947"
   },
   {
-   "id": 27,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
+   "id": "delirium-france-espagne",
+   "title": "Délirium France-Espagne",
+   "year": null,
+   "src": "/images/posters/delirium-france-espagne.webp",
+   "thumb": "/images/posters/delirium-france-espagne-thumb.webp",
+   "tone": "#413878"
   },
   {
-   "id": 28,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
+   "id": "soiree-delirium",
+   "title": "Soirée Délirium",
+   "year": null,
+   "src": "/images/posters/soiree-delirium.webp",
+   "thumb": "/images/posters/soiree-delirium-thumb.webp",
+   "tone": "#a673a5"
   },
   {
-   "id": 29,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
+   "id": "jack-d",
+   "title": "Jack D",
+   "year": null,
+   "src": "/images/posters/jack-d.webp",
+   "thumb": "/images/posters/jack-d-thumb.webp",
+   "tone": "#976380"
   },
   {
-   "id": 30,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
+   "id": "dj-set-techno",
+   "title": "DJ set techno",
+   "year": null,
+   "src": "/images/posters/dj-set-techno.webp",
+   "thumb": "/images/posters/dj-set-techno-thumb.webp",
+   "tone": "#353637"
   },
   {
-   "id": 31,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
+   "id": "velvet-ripley",
+   "title": "Concert Velvet Ripley",
+   "year": null,
+   "src": "/images/posters/velvet-ripley.webp",
+   "thumb": "/images/posters/velvet-ripley-thumb.webp",
+   "tone": "#f0bb44"
   },
   {
-   "id": 32,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
-  },
-  {
-   "id": 33,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
-  },
-  {
-   "id": 34,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
-  },
-  {
-   "id": 35,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
-  },
-  {
-   "id": 36,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
-  },
-  {
-   "id": 37,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
-  },
-  {
-   "id": 38,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
-  },
-  {
-   "id": 39,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
-  },
-  {
-   "id": 40,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
-  },
-  {
-   "id": 41,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
-  },
-  {
-   "id": 42,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
-  },
-  {
-   "id": 43,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
-  },
-  {
-   "id": 44,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
-  },
-  {
-   "id": 45,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
-  },
-  {
-   "id": 46,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
-  },
-  {
-   "id": 47,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
-  },
-  {
-   "id": 48,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
-  },
-  {
-   "id": 49,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
-  },
-  {
-   "id": 50,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
-  },
-  {
-   "id": 51,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
-  },
-  {
-   "id": 52,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
-  },
-  {
-   "id": 53,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
-  },
-  {
-   "id": 54,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#E9C3A2"
-  },
-  {
-   "id": 55,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#F0D3B6"
-  },
-  {
-   "id": 56,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#F26A1B"
-  },
-  {
-   "id": 57,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#2E2924"
-  },
-  {
-   "id": 58,
-   "title": "[Poster title]",
-   "year": "2024",
-   "tone": "#C9B79F"
-  },
-  {
-   "id": 59,
-   "title": "[Poster title]",
-   "year": "2023",
-   "tone": "#1D2BB8"
-  },
-  {
-   "id": 60,
-   "title": "[Poster title]",
-   "year": "2026",
-   "tone": "#D8CCBA"
-  },
-  {
-   "id": 61,
-   "title": "[Poster title]",
-   "year": "2025",
-   "tone": "#BFB2A1"
+   "id": "whats-my-age",
+   "title": "Concert What’s my age",
+   "year": null,
+   "src": "/images/posters/whats-my-age.webp",
+   "thumb": "/images/posters/whats-my-age-thumb.webp",
+   "tone": "#766f75"
   }
  ]
 }
