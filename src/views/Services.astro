@@ -6,9 +6,9 @@ const lang = (Astro.currentLocale ?? 'fr') as Lang;
 const t = useT(lang);
 const L = (p: string) => localePath(lang, p);
 const services = [
-  { n: '01', title: t('services.photo.title'), type: 'photography', theme: 'surface', thumb: '#C9B79F', text: t('services.photo.text'), gets: [t('services.photo.g1'), t('services.photo.g2'), t('services.photo.g3')], price: t('services.priceFrom') },
-  { n: '02', title: t('services.video.title'), type: 'video', theme: 'orange', thumb: '#2E2924', sticker: t('services.video.sticker'), text: t('services.video.text'), gets: [t('services.video.g1'), t('services.video.g2'), t('services.video.g3')], price: t('services.priceFrom') },
-  { n: '03', title: t('services.content.title'), type: 'content-creation', theme: 'blue', thumb: '#E9C3A2', text: t('services.content.text'), gets: [t('services.content.g1'), t('services.content.g2'), t('services.content.g3')], price: t('services.priceReq') },
+  { n: '01', title: t('services.photo.title'), type: 'photography', theme: 'surface', thumb: '#C9B79F', text: t('services.photo.text'), gets: [t('services.photo.g1'), t('services.photo.g2'), t('services.photo.g3')] },
+  { n: '02', title: t('services.video.title'), type: 'video', theme: 'orange', thumb: '#2E2924', sticker: t('services.video.sticker'), text: t('services.video.text'), gets: [t('services.video.g1'), t('services.video.g2'), t('services.video.g3')] },
+  { n: '03', title: t('services.content.title'), type: 'content-creation', theme: 'blue', thumb: '#E9C3A2', text: t('services.content.text'), gets: [t('services.content.g1'), t('services.content.g2'), t('services.content.g3')] },
 ];
 ---
 <Base title={t('services.title')} description={t('services.desc')} current="/services">
@@ -28,7 +28,6 @@ const services = [
           <ul>{s.gets.map((g) => <li>{g}</li>)}</ul>
         </div>
         <div class="foot">
-          <span class="price">{s.price}</span>
           <a href={L(`/contact?type=${s.type}`)} class="btn">{t('services.touch')}</a>
         </div>
       </article>
@@ -48,8 +47,8 @@ const services = [
   .surface{background:var(--color-surface);color:var(--color-text)}
   .orange{background:var(--color-orange);color:var(--color-ink)}
   .blue{background:var(--color-blue);color:var(--color-on-blue-muted)}
-  .surface h2,.surface .price,.surface .gl{color:var(--color-ink)}
-  .blue h2,.blue .price,.blue .gl{color:var(--color-bg)}
+  .surface h2,.surface .gl{color:var(--color-ink)}
+  .blue h2,.blue .gl{color:var(--color-bg)}
   .top{display:flex;justify-content:space-between;align-items:center}
   .num{font-size:15px;font-weight:500}
   .surface .num{color:var(--color-muted)}
@@ -59,7 +58,6 @@ const services = [
   .gl{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
   ul{margin:0;padding-left:18px;font-size:15px;line-height:1.8}
   .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-  .price{font-size:16px;font-weight:600}
   .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--color-ink);color:var(--color-bg);font-size:15px;font-weight:500}
   .btn:hover{color:var(--color-bg);background:var(--color-blue)}
   .blue .btn{background:var(--color-orange);color:var(--color-ink)}
