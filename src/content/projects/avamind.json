@@ -6,14 +6,15 @@
   "categories": [
     "Graphic design"
   ],
-  "client": "[Client]",
+  "client": "Personal project",
   "year": "[Year]",
   "role": "[Role]",
   "tone": "#E9C3A2",
   "fr": {
     "subtitle": "[Type de projet]",
     "year": "[Année]",
-    "role": "[Rôle]"
+    "role": "[Rôle]",
+    "client": "Projet personnel"
   },
   "image": "/images/avamind/poster-2-thumb.webp",
   "imageAlt": {
