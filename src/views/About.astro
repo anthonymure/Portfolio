@@ -9,15 +9,13 @@ const clients = [lang === 'fr' ? 'Soggy Bottom' : 'Soggy Bottom', ...Array(7).fi
 <Base title={t('about.title')} description={t('about.desc')} current="/about">
   <section class="top">
     <div class="portrait">
-      <div class="arch" aria-hidden="true"></div>
-      <span class="ph">{t('about.portraitPh')}</span>
+      <img src="/images/home/anthony.webp" alt={t('about.portraitAlt')} width="1100" height="1650" loading="eager" />
       <span class="hand st">{t('about.me')}</span>
     </div>
     <div class="bio">
       <h1>{t('about.hi')} <span class="a">Anthony<svg viewBox="0 0 220 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16c40-12 92-14 150-7 28 3 44 7 62 1" fill="none" stroke="var(--color-blue)" stroke-width="7" stroke-linecap="round"/></svg></span>.</h1>
       <div class="txt">
         <p>{t('about.p1')}</p>
-        <!-- Texte à compléter par Anthony -->
         <p>{t('about.p2')}</p>
       </div>
       <div class="btns">
@@ -37,6 +35,7 @@ const clients = [lang === 'fr' ? 'Soggy Bottom' : 'Soggy Bottom', ...Array(7).fi
 <style>
   .top{display:flex;flex-wrap:wrap;gap:16px;padding-top:32px}
   .portrait{flex:1 1 380px;min-height:640px;border-radius:var(--radius-card);background:var(--color-orange);position:relative;overflow:hidden}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
   .arch{position:absolute;left:40px;right:40px;top:48px;bottom:0;border-radius:200px 200px 0 0;background:#C9B79F}
   .ph{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);font-size:12px;padding:5px 10px;border-radius:999px;background:rgba(26,23,20,.55);color:var(--color-bg);white-space:nowrap}
   .st{position:absolute;top:28px;right:28px;font-size:30px;padding:2px 16px;border-radius:999px;background:var(--color-blue);color:var(--color-bg);transform:rotate(8deg)}
