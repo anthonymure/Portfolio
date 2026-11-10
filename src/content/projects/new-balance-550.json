@@ -12,7 +12,7 @@
   "featured": true,
   "duration": "0:27",
   "context": "A short product film built around the New Balance 550 — texture, movement and street atmosphere in under 30 seconds.",
-  "tone": "#C9B79F",
+  "tone": "#979697",
   "fr": {
     "subtitle": "Film produit",
     "year": "[Année]",
@@ -20,5 +20,36 @@
     "context": "Un court film produit autour de la New Balance 550 : textures, mouvement et ambiance urbaine en moins de 30 secondes."
   },
   "youtube": "yrz5k53EWKM",
-  "vertical": true
+  "vertical": true,
+  "image": "/images/new-balance-550/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Un homme montant un escalier, logo New Balance en surimpression",
+    "en": "A man walking up a staircase, New Balance logo overlaid"
+  },
+  "gallery": [
+    {
+      "src": "/images/new-balance-550/still-1.webp",
+      "alt": {
+        "fr": "Gros plan sur une New Balance 550 beige",
+        "en": "Close-up of a beige New Balance 550"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/new-balance-550/still-2.webp",
+      "alt": {
+        "fr": "Un homme lisant un journal dans une rue aux façades rouges",
+        "en": "A man reading a newspaper on a street with red facades"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/new-balance-550/still-3.webp",
+      "alt": {
+        "fr": "Un homme montant un escalier, logo New Balance en surimpression",
+        "en": "A man walking up a staircase, New Balance logo overlaid"
+      },
+      "ratio": 0.563
+    }
+  ]
 }

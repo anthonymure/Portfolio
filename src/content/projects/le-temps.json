@@ -12,11 +12,34 @@
   "featured": false,
   "youtube": "OoAuCqnSSdo",
   "vertical": true,
-  "tone": "#C4B49C",
+  "tone": "#3c3c3c",
   "fr": {
     "subtitle": "Court film",
     "client": "[Client]",
     "year": "[Année]",
     "role": "[Rôle]"
-  }
+  },
+  "image": "/images/le-temps/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Gros plan sur le cadran d’une montre automatique",
+    "en": "Close-up of an automatic watch dial"
+  },
+  "gallery": [
+    {
+      "src": "/images/le-temps/still-1.webp",
+      "alt": {
+        "fr": "Gros plan sur le cadran d’une montre automatique",
+        "en": "Close-up of an automatic watch dial"
+      },
+      "ratio": 0.561
+    },
+    {
+      "src": "/images/le-temps/still-2.webp",
+      "alt": {
+        "fr": "Portrait en noir et blanc d’un homme à casquette avec des écouteurs",
+        "en": "Black-and-white portrait of a man in a cap wearing earphones"
+      },
+      "ratio": 0.561
+    }
+  ]
 }

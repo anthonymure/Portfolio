@@ -12,12 +12,43 @@
   "featured": false,
   "youtube": "ABoWHilauoI",
   "vertical": true,
-  "tone": "#C4B49C",
+  "tone": "#956c56",
   "fr": {
     "title": "Vidéo promo saucisson",
     "subtitle": "Vidéo promotionnelle",
     "client": "[Client]",
     "year": "[Année]",
     "role": "[Rôle]"
-  }
+  },
+  "image": "/images/promo-saucisson/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Un barman sert une bière, vue à la première personne",
+    "en": "A bartender serves a beer, first-person view"
+  },
+  "gallery": [
+    {
+      "src": "/images/promo-saucisson/still-1.webp",
+      "alt": {
+        "fr": "Entrée de la taverne Le Soggy Bottom, dans une esthétique de jeu vidéo",
+        "en": "Entrance of the Soggy Bottom tavern, in a video game style"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/promo-saucisson/still-2.webp",
+      "alt": {
+        "fr": "Un barman sert une bière, vue à la première personne",
+        "en": "A bartender serves a beer, first-person view"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/promo-saucisson/still-3.webp",
+      "alt": {
+        "fr": "Un barman tend un verre, vue à la première personne",
+        "en": "A bartender hands over a glass, first-person view"
+      },
+      "ratio": 0.563
+    }
+  ]
 }

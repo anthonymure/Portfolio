@@ -10,7 +10,7 @@ const tone = project.data.tone;
 const items = (g.length ? g : [
   { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 01` }, { src: '', alt: '', wide: false, ph: `${t('proj.imagePh')} 02` }, { src: '', alt: '', wide: true, ph: `${t('proj.imagePh')} 03 · ${t('proj.fullWidth')}` }]).map((it) => ({ ...it, wide: it.wide || (it.ratio ?? 0) > 1.2 }));
 // Regroupe : les « wide » seuls, les autres par paire (par trois quand la série dépasse 12 images).
-const dense = items.length > 12;
+const dense = items.length > 12 || (items.length >= 3 && items.every((i) => (i.ratio ?? 1) < 0.7)); // grille à 3 colonnes
 const per = dense ? 3 : 2;
 const rows = []; let buf = [];
 for (const it of items) { if (it.wide) { if (buf.length) rows.push(buf), buf = []; rows.push([it]); } else { buf.push(it); if (buf.length === per) rows.push(buf), buf = []; } }

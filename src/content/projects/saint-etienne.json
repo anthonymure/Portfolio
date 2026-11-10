@@ -12,7 +12,7 @@
   "featured": false,
   "duration": "1:00",
   "context": "Fictional promotional film about the city of Saint-Étienne.",
-  "tone": "#1D2BB8",
+  "tone": "#504839",
   "fr": {
     "subtitle": "Projet personnel · Film sur la ville",
     "client": "Projet personnel",
@@ -21,5 +21,36 @@
     "context": "Film promotionnel fictif sur la ville de Saint-Étienne."
   },
   "youtube": "9C0fZkVZX8Y",
-  "vertical": true
+  "vertical": true,
+  "image": "/images/saint-etienne/cover-thumb.webp",
+  "imageAlt": {
+    "fr": "Un homme tenant une caméra devant son visage",
+    "en": "A man holding a camera in front of his face"
+  },
+  "gallery": [
+    {
+      "src": "/images/saint-etienne/still-1.webp",
+      "alt": {
+        "fr": "Un lampadaire à contre-jour au coucher du soleil",
+        "en": "A backlit street lamp at sunset"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-etienne/still-2.webp",
+      "alt": {
+        "fr": "Un homme tenant une caméra devant son visage",
+        "en": "A man holding a camera in front of his face"
+      },
+      "ratio": 0.563
+    },
+    {
+      "src": "/images/saint-etienne/still-3.webp",
+      "alt": {
+        "fr": "Une statue devant un bâtiment de pierre",
+        "en": "A statue in front of a stone building"
+      },
+      "ratio": 0.563
+    }
+  ]
 }
