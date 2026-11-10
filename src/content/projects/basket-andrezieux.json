@@ -1,0 +1,37 @@
+{
+  "slug": "basket-andrezieux",
+  "order": 23,
+  "title": "Andrézieux basketball poster",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Poster · Personal project",
+  "client": "Personal project",
+  "year": "[Year]",
+  "role": "Design",
+  "context": "A match-day poster for the Andrézieux basketball team, made as a personal project.",
+  "fr": {
+    "title": "Affiche basket Andrézieux",
+    "subtitle": "Affiche · Projet personnel",
+    "client": "Projet personnel",
+    "year": "[Année]",
+    "context": "Une affiche de match pour l’équipe de basket d’Andrézieux, réalisée en projet personnel."
+  },
+  "featured": false,
+  "tone": "#d8484a",
+  "image": "/images/basket-andrezieux/affiche-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche encadrée d’un joueur de basket de l’équipe SCBVC, en rouge et blanc",
+    "en": "Framed poster of a basketball player from the SCBVC team, in red and white"
+  },
+  "gallery": [
+    {
+      "src": "/images/basket-andrezieux/affiche.webp",
+      "alt": {
+        "fr": "Affiche encadrée d’un joueur de basket de l’équipe SCBVC, en rouge et blanc",
+        "en": "Framed poster of a basketball player from the SCBVC team, in red and white"
+      },
+      "ratio": 0.797
+    }
+  ]
+}

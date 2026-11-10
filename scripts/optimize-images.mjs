@@ -39,6 +39,7 @@ const bar = [
   ['goot.png', 'delirium-france-espagne', 'Délirium France-Espagne'],
   ['soirée delirium sept 26.png', 'soiree-delirium', 'Soirée Délirium'],
   ['jack d soiree 2 post.jpg.png', 'jack-d', 'Jack D'],
+  ['16 10 jagger.png', 'soiree-jagermeister', 'Soirée Jägermeister'],
   ['tchno.png', 'dj-set-techno', 'DJ set techno'],
   ['velvet ripley.png', 'velvet-ripley', 'Concert Velvet Ripley'],
   ['what\'s my age.png', 'whats-my-age', 'Concert What’s my age'],

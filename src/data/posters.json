@@ -242,6 +242,14 @@
    "tone": "#976380"
   },
   {
+   "id": "soiree-jagermeister",
+   "title": "Soirée Jägermeister",
+   "year": null,
+   "src": "/images/posters/soiree-jagermeister.webp",
+   "thumb": "/images/posters/soiree-jagermeister-thumb.webp",
+   "tone": "#8b8a4e"
+  },
+  {
    "id": "dj-set-techno",
    "title": "DJ set techno",
    "year": null,
