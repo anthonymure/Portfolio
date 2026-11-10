@@ -6,18 +6,18 @@
   "categories": [
     "Video"
   ],
-  "client": "[Client]",
+  "client": "Personal project",
   "year": "2025",
-  "role": "[Role]",
+  "role": "Everything, solo",
   "featured": false,
   "youtube": "OoAuCqnSSdo",
   "vertical": true,
   "tone": "#3c3c3c",
   "fr": {
     "subtitle": "Court métrage",
-    "client": "[Client]",
+    "client": "Projet personnel",
     "year": "2025",
-    "role": "[Rôle]"
+    "role": "Tout en solo (de A à Z)"
   },
   "image": "/images/le-temps/cover-thumb.webp",
   "imageAlt": {

@@ -6,9 +6,9 @@
   "categories": [
     "Video"
   ],
-  "client": "[Client]",
+  "client": "Personal project",
   "year": "2025",
-  "role": "Direction, filming & editing",
+  "role": "Everything, solo",
   "featured": true,
   "duration": "0:27",
   "context": "A short product film built around the New Balance 550 — texture, movement and street atmosphere in under 30 seconds.",
@@ -16,8 +16,9 @@
   "fr": {
     "subtitle": "Film produit",
     "year": "2025",
-    "role": "Réalisation, tournage et montage",
-    "context": "Un court film produit autour de la New Balance 550 : textures, mouvement et ambiance urbaine en moins de 30 secondes."
+    "role": "Tout en solo (de A à Z)",
+    "context": "Un court film produit autour de la New Balance 550 : textures, mouvement et ambiance urbaine en moins de 30 secondes.",
+    "client": "Projet personnel"
   },
   "youtube": "yrz5k53EWKM",
   "vertical": true,
