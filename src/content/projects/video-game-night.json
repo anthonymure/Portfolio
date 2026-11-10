@@ -2,19 +2,19 @@
   "order": 11,
   "slug": "video-game-night",
   "title": "Video game night",
-  "subtitle": "[Bar name] · Reel",
+  "subtitle": "Soggy Bottom · Reel",
   "categories": [
     "Video"
   ],
-  "client": "[Bar name]",
+  "client": "Soggy Bottom",
   "year": "[Year]",
   "role": "[Role]",
   "duration": "0:59",
   "context": "Video-game references for a fun, punchy look.",
   "tone": "#1D2BB8",
   "fr": {
-    "subtitle": "[Nom du bar] · Reel",
-    "client": "[Nom du bar]",
+    "subtitle": "Soggy Bottom · Reel",
+    "client": "Soggy Bottom",
     "year": "[Année]",
     "role": "[Rôle]",
     "context": "Des références de jeux vidéo pour un look fun et percutant."

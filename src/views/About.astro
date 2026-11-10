@@ -4,7 +4,7 @@ import { useT, localePath, type Lang } from '../i18n/ui';
 const lang = (Astro.currentLocale ?? 'fr') as Lang;
 const t = useT(lang);
 const L = (p: string) => localePath(lang, p);
-const clients = [lang === 'fr' ? '[Nom du bar]' : '[Bar name]', ...Array(7).fill(t('about.logo'))];
+const clients = [lang === 'fr' ? 'Soggy Bottom' : 'Soggy Bottom', ...Array(7).fill(t('about.logo'))];
 ---
 <Base title={t('about.title')} description={t('about.desc')} current="/about">
   <section class="top">

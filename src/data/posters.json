@@ -264,6 +264,14 @@
    "src": "/images/posters/whats-my-age.webp",
    "thumb": "/images/posters/whats-my-age-thumb.webp",
    "tone": "#766f75"
+  },
+  {
+   "id": "concert-funky",
+   "title": "Concert Funky",
+   "year": null,
+   "src": "/images/posters/concert-funky.webp",
+   "thumb": "/images/posters/concert-funky-thumb.webp",
+   "tone": "#6966d6"
   }
  ]
 }

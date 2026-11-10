@@ -42,6 +42,7 @@ const bar = [
   ['tchno.png', 'dj-set-techno', 'DJ set techno'],
   ['velvet ripley.png', 'velvet-ripley', 'Concert Velvet Ripley'],
   ['what\'s my age.png', 'whats-my-age', 'Concert What’s my age'],
+  ['IMG_1236.png.webp', 'concert-funky', 'Concert Funky'],
 ];
 // Autres projets : [fichier source, dossier, nom]
 const others = [

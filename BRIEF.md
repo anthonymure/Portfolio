@@ -144,7 +144,7 @@ En bas : « Not sure what you need? *let's figure it out* » + bouton.
 
 ### À fournir par Anthony (laisser les crochets visibles en attendant)
 - Toutes les images, le showreel et les boucles vidéo (les images de l'ancien site Wix n'ont pas pu être récupérées automatiquement).
-- Nom du bar, années, clients et rôles de chaque projet.
+- Années, clients et rôles de chaque projet (le bar est le Soggy Bottom, confirmé le 10 novembre 2026).
 - Une ou deux séries photo (aucune n'apparaît sur l'ancien site).
 - Prix des prestations, délai de réponse, texte About complété, logos clients.
 - Mentions légales.
