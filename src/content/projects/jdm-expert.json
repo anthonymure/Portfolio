@@ -1,0 +1,83 @@
+{
+  "slug": "jdm-expert",
+  "order": 16,
+  "title": "JDM Expert",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Brand · Print · Web",
+  "client": "JDM Expert",
+  "year": "2019–2024",
+  "role": "Communications officer (full-time job)",
+  "context": "Work made during my full-time job as communications officer.",
+  "fr": {
+    "subtitle": "Marque · Print · Web",
+    "role": "Chargé de communication (CDI)",
+    "context": "Travaux réalisés pendant mon CDI de chargé de communication."
+  },
+  "featured": false,
+  "tone": "#c1c6c6",
+  "image": "/images/jdm-expert/coffret-thumb.webp",
+  "imageAlt": {
+    "fr": "Coffret et cartes de visite JDM Expert",
+    "en": "JDM Expert box and business cards"
+  },
+  "gallery": [
+    {
+      "src": "/images/jdm-expert/coffret.webp",
+      "alt": {
+        "fr": "Coffret et cartes de visite JDM Expert",
+        "en": "JDM Expert box and business cards"
+      },
+      "ratio": 1.364
+    },
+    {
+      "src": "/images/jdm-expert/site.webp",
+      "alt": {
+        "fr": "Maquettes du site web JDM Expert",
+        "en": "JDM Expert website mockups"
+      },
+      "ratio": 1.5
+    },
+    {
+      "src": "/images/jdm-expert/plaquette.webp",
+      "alt": {
+        "fr": "Plaquette JDM Expert : aménagement extérieur et piscine",
+        "en": "JDM Expert brochure: outdoor landscaping and pool"
+      },
+      "ratio": 1
+    },
+    {
+      "src": "/images/jdm-expert/plaquettes.webp",
+      "alt": {
+        "fr": "Plaquettes JDM Expert présentées en vol",
+        "en": "JDM Expert brochures floating"
+      },
+      "ratio": 1.364
+    },
+    {
+      "src": "/images/jdm-expert/kakemono.webp",
+      "alt": {
+        "fr": "Roll-up et drapeau publicitaire JDM Expert",
+        "en": "JDM Expert roll-up and promotional flag"
+      },
+      "ratio": 1.364
+    },
+    {
+      "src": "/images/jdm-expert/drapeau.webp",
+      "alt": {
+        "fr": "Drapeau publicitaire JDM Expert",
+        "en": "JDM Expert promotional flag"
+      },
+      "ratio": 0.667
+    },
+    {
+      "src": "/images/jdm-expert/reseaux.webp",
+      "alt": {
+        "fr": "Publications Instagram JDM Expert",
+        "en": "JDM Expert Instagram posts"
+      },
+      "ratio": 1.5
+    }
+  ]
+}

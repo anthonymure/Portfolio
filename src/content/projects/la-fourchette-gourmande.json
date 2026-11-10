@@ -1,0 +1,36 @@
+{
+  "slug": "la-fourchette-gourmande",
+  "order": 14,
+  "title": "La Fourchette Gourmande",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Logo · Concept",
+  "client": "Concept (fictional project)",
+  "year": "2023",
+  "role": "Logo design",
+  "context": "A restaurant picked at random, whose logo I redesigned.",
+  "fr": {
+    "subtitle": "Logo · Concept",
+    "client": "Concept (projet fictif)",
+    "role": "Création de logo",
+    "context": "Un restaurant choisi au hasard, dont j’ai refait le logo."
+  },
+  "featured": false,
+  "tone": "#7b826d",
+  "image": "/images/la-fourchette-gourmande/enseigne-thumb.webp",
+  "imageAlt": {
+    "fr": "Enseigne du restaurant La Fourchette Gourmande avec le nouveau logo",
+    "en": "La Fourchette Gourmande restaurant sign with the redesigned logo"
+  },
+  "gallery": [
+    {
+      "src": "/images/la-fourchette-gourmande/enseigne.webp",
+      "alt": {
+        "fr": "Enseigne du restaurant La Fourchette Gourmande avec le nouveau logo",
+        "en": "La Fourchette Gourmande restaurant sign with the redesigned logo"
+      },
+      "ratio": 1.377
+    }
+  ]
+}

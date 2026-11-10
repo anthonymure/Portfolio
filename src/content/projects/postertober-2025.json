@@ -1,0 +1,43 @@
+{
+  "slug": "postertober-2025",
+  "order": 22,
+  "title": "Postertober 2025",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Poster challenge",
+  "client": "Personal project",
+  "year": "2025",
+  "role": "Design",
+  "context": "Posters made for Postertober 2025: GUB Les Estivales and Aurillac.",
+  "fr": {
+    "subtitle": "Défi d’affiches",
+    "client": "Projet personnel",
+    "context": "Affiches réalisées dans le cadre du Postertober 2025 : GUB Les Estivales et Aurillac."
+  },
+  "featured": false,
+  "tone": "#dcbb92",
+  "image": "/images/postertober-2025/gub-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche GUB Les Estivales : un canard à lunettes sur fond coloré",
+    "en": "GUB Les Estivales poster: a duck wearing sunglasses on a colorful background"
+  },
+  "gallery": [
+    {
+      "src": "/images/postertober-2025/gub.webp",
+      "alt": {
+        "fr": "Affiche GUB Les Estivales : un canard à lunettes sur fond coloré",
+        "en": "GUB Les Estivales poster: a duck wearing sunglasses on a colorful background"
+      },
+      "ratio": 0.707
+    },
+    {
+      "src": "/images/postertober-2025/aurillac.webp",
+      "alt": {
+        "fr": "Affiche du festival d’Aurillac, du 19 au 22 août : silhouettes en noir et blanc, ruban coloré",
+        "en": "Aurillac festival poster, 19 to 22 August: black-and-white silhouettes, colorful ribbon"
+      },
+      "ratio": 0.707
+    }
+  ]
+}

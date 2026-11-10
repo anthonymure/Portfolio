@@ -25,7 +25,7 @@ const projects = defineCollection({
     imageAlt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]).optional(),
     loop: z.string().optional(),
     vimeo: z.string().optional(), // ID Vimeo (ex. '123456789')
-    gallery: z.array(z.object({ src: z.string(), alt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]), wide: z.boolean().default(false) })).default([]),
+    gallery: z.array(z.object({ src: z.string(), alt: z.union([z.string(), z.object({ fr: z.string(), en: z.string() })]), wide: z.boolean().default(false), ratio: z.number().optional() })).default([]),
   }),
 });
 export const collections = { projects };

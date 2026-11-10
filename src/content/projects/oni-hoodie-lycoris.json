@@ -1,0 +1,61 @@
+{
+  "slug": "oni-hoodie-lycoris",
+  "order": 18,
+  "title": "Oni — Hoodie Lycoris",
+  "categories": [
+    "Graphic design",
+    "Photography"
+  ],
+  "subtitle": "Content creation · Fictional project",
+  "client": "Oni by Louis San (fictional project)",
+  "year": "2025",
+  "role": "Content creation",
+  "context": "Content created for Louis San’s brand Oni. A fictional project.",
+  "fr": {
+    "subtitle": "Création de contenus · Projet fictif",
+    "client": "Oni de Louis San (projet fictif)",
+    "role": "Création de contenus",
+    "context": "Création de contenus pour la marque Oni de Louis San. Un projet fictif."
+  },
+  "featured": false,
+  "tone": "#745953",
+  "image": "/images/oni-hoodie-lycoris/affiche-3-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche Oni : modèle en hoodie dans une rue éclairée de néons",
+    "en": "Oni poster: model in a hoodie on a neon-lit street"
+  },
+  "gallery": [
+    {
+      "src": "/images/oni-hoodie-lycoris/affiche-1.webp",
+      "alt": {
+        "fr": "Affiche du hoodie Lycoris Oni : portrait d’une femme en hoodie noir brodé",
+        "en": "Oni Lycoris hoodie poster: woman wearing a black embroidered hoodie"
+      },
+      "ratio": 0.8
+    },
+    {
+      "src": "/images/oni-hoodie-lycoris/affiche-2.webp",
+      "alt": {
+        "fr": "Affiche du hoodie Lycoris Oni : portrait d’un homme en hoodie noir brodé",
+        "en": "Oni Lycoris hoodie poster: man wearing a black embroidered hoodie"
+      },
+      "ratio": 0.8
+    },
+    {
+      "src": "/images/oni-hoodie-lycoris/affiche-3.webp",
+      "alt": {
+        "fr": "Affiche Oni : modèle en hoodie dans une rue éclairée de néons",
+        "en": "Oni poster: model in a hoodie on a neon-lit street"
+      },
+      "ratio": 0.8
+    },
+    {
+      "src": "/images/oni-hoodie-lycoris/instagram.webp",
+      "alt": {
+        "fr": "Publication Instagram présentant le hoodie Oni",
+        "en": "Instagram post showing the Oni hoodie"
+      },
+      "ratio": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "aria",
+  "order": 19,
+  "title": "Aria",
+  "categories": [
+    "Photography",
+    "Graphic design"
+  ],
+  "subtitle": "Concert poster · Portrait",
+  "client": "Aria",
+  "year": "2025",
+  "role": "Photography & design",
+  "context": "A poster for a musician: I took the photo and designed the poster.",
+  "fr": {
+    "subtitle": "Affiche de concert · Portrait",
+    "role": "Photographie et design",
+    "context": "Une affiche pour une musicienne : j’ai pris la photo et créé l’affiche."
+  },
+  "featured": false,
+  "tone": "#4b2c24",
+  "image": "/images/aria/affiche-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche du concert d’Aria, le 30 août 2025 : portrait de la musicienne dans une lumière rouge",
+    "en": "Poster for Aria’s concert on 30 August 2025: portrait of the musician in red light"
+  },
+  "gallery": [
+    {
+      "src": "/images/aria/affiche.webp",
+      "alt": {
+        "fr": "Affiche du concert d’Aria, le 30 août 2025 : portrait de la musicienne dans une lumière rouge",
+        "en": "Poster for Aria’s concert on 30 August 2025: portrait of the musician in red light"
+      },
+      "ratio": 0.707
+    }
+  ]
+}

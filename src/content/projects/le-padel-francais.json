@@ -1,0 +1,43 @@
+{
+  "slug": "le-padel-francais",
+  "order": 15,
+  "title": "Le Padel Français",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Print · Communication",
+  "client": "Le Padel Français",
+  "year": "2019–2024",
+  "role": "Communications officer (full-time job)",
+  "context": "Work made during my full-time job as communications officer.",
+  "fr": {
+    "subtitle": "Print · Communication",
+    "role": "Chargé de communication (CDI)",
+    "context": "Travaux réalisés pendant mon CDI de chargé de communication."
+  },
+  "featured": false,
+  "tone": "#968d91",
+  "image": "/images/le-padel-francais/flyers-thumb.webp",
+  "imageAlt": {
+    "fr": "Flyers du Padel Français : invitation rouge et plaquette bleue",
+    "en": "Le Padel Français flyers: red invitation and blue brochure"
+  },
+  "gallery": [
+    {
+      "src": "/images/le-padel-francais/flyers.webp",
+      "alt": {
+        "fr": "Flyers du Padel Français : invitation rouge et plaquette bleue",
+        "en": "Le Padel Français flyers: red invitation and blue brochure"
+      },
+      "ratio": 1.364
+    },
+    {
+      "src": "/images/le-padel-francais/brochure.webp",
+      "alt": {
+        "fr": "Brochure du Padel Français présentant les caractéristiques des terrains",
+        "en": "Le Padel Français brochure presenting the courts"
+      },
+      "ratio": 1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "alexandra-hersard-corailler",
+  "order": 13,
+  "title": "Alexandra Hersard Corailler",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Visual identity · Special educator",
+  "client": "Alexandra Hersard Corailler",
+  "year": "2024",
+  "role": "Logo & visual identity",
+  "context": "A professional who supports parents and their children needed a visual identity. I created it.",
+  "fr": {
+    "subtitle": "Identité visuelle · Éducatrice spécialisée",
+    "role": "Logo et identité visuelle",
+    "context": "Une professionnelle qui accompagne les parents et leurs enfants avait besoin d’une identité visuelle. Je l’ai créée."
+  },
+  "featured": false,
+  "tone": "#18463f",
+  "image": "/images/alexandra-hersard-corailler/logo-thumb.webp",
+  "imageAlt": {
+    "fr": "Logo d’Alexandra Hersard Corailler, éducatrice spécialisée, sur fond vert foncé",
+    "en": "Alexandra Hersard Corailler logo, special educator, on a dark green background"
+  },
+  "gallery": [
+    {
+      "src": "/images/alexandra-hersard-corailler/logo.webp",
+      "alt": {
+        "fr": "Logo d’Alexandra Hersard Corailler, éducatrice spécialisée, sur fond vert foncé",
+        "en": "Alexandra Hersard Corailler logo, special educator, on a dark green background"
+      },
+      "ratio": 1.75
+    },
+    {
+      "src": "/images/alexandra-hersard-corailler/carte.webp",
+      "alt": {
+        "fr": "Cartes de visite d’Alexandra Hersard Corailler",
+        "en": "Alexandra Hersard Corailler business cards"
+      },
+      "ratio": 1.333
+    }
+  ]
+}

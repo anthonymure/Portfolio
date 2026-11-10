@@ -1,0 +1,36 @@
+{
+  "slug": "passages-imaginaires",
+  "order": 17,
+  "title": "Passages imaginaires",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Logo & visuals",
+  "client": "Passages imaginaires",
+  "year": "[Year]",
+  "role": "Logo & visuals",
+  "context": "A logo and a few visuals for an independent creator of playful games.",
+  "fr": {
+    "subtitle": "Logo et visuels",
+    "year": "[Année]",
+    "role": "Logo et visuels",
+    "context": "Un logo et quelques visuels pour une créatrice indépendante de jeux ludiques."
+  },
+  "featured": false,
+  "tone": "#bcb398",
+  "image": "/images/passages-imaginaires/logo-thumb.webp",
+  "imageAlt": {
+    "fr": "Carte portant le logo Passages imaginaires, tenue par un mannequin en bois",
+    "en": "Card with the Passages imaginaires logo, held by a wooden mannequin"
+  },
+  "gallery": [
+    {
+      "src": "/images/passages-imaginaires/logo.webp",
+      "alt": {
+        "fr": "Carte portant le logo Passages imaginaires, tenue par un mannequin en bois",
+        "en": "Card with the Passages imaginaires logo, held by a wooden mannequin"
+      },
+      "ratio": 1.5
+    }
+  ]
+}

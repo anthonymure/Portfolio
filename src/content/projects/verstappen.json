@@ -1,0 +1,33 @@
+{
+  "slug": "verstappen",
+  "order": 21,
+  "title": "Verstappen",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Poster · Fictional project",
+  "client": "Fictional project",
+  "year": "2025",
+  "role": "Design",
+  "fr": {
+    "subtitle": "Affiche · Projet fictif",
+    "client": "Projet fictif"
+  },
+  "featured": false,
+  "tone": "#12122e",
+  "image": "/images/verstappen/affiche-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche fictive Max Verstappen 2025, en bleu marine et rouge",
+    "en": "Fictional Max Verstappen 2025 poster, in navy blue and red"
+  },
+  "gallery": [
+    {
+      "src": "/images/verstappen/affiche.webp",
+      "alt": {
+        "fr": "Affiche fictive Max Verstappen 2025, en bleu marine et rouge",
+        "en": "Fictional Max Verstappen 2025 poster, in navy blue and red"
+      },
+      "ratio": 0.707
+    }
+  ]
+}

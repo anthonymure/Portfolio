@@ -1,0 +1,33 @@
+{
+  "slug": "gasly-alpine",
+  "order": 20,
+  "title": "Gasly — Alpine",
+  "categories": [
+    "Graphic design"
+  ],
+  "subtitle": "Poster · Fictional project",
+  "client": "Fictional project",
+  "year": "2025",
+  "role": "Design",
+  "fr": {
+    "subtitle": "Affiche · Projet fictif",
+    "client": "Projet fictif"
+  },
+  "featured": false,
+  "tone": "#3a394f",
+  "image": "/images/gasly-alpine/affiche-thumb.webp",
+  "imageAlt": {
+    "fr": "Affiche fictive Alpine : Pierre Gasly, en bleu et violet sur fond noir",
+    "en": "Fictional Alpine poster: Pierre Gasly, in blue and purple on a black background"
+  },
+  "gallery": [
+    {
+      "src": "/images/gasly-alpine/affiche.webp",
+      "alt": {
+        "fr": "Affiche fictive Alpine : Pierre Gasly, en bleu et violet sur fond noir",
+        "en": "Fictional Alpine poster: Pierre Gasly, in blue and purple on a black background"
+      },
+      "ratio": 0.707
+    }
+  ]
+}
