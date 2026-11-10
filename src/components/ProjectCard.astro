@@ -10,7 +10,7 @@ const href = localePath(lang, `/work/${p.slug}`);
 ---
 <a href={href} class="tile card">
   <div class="thumb" style={`background:${p.tone}`}>
-    {p.image && <img src={p.image} alt={pick(p.imageAlt, lang) || p.title} loading="lazy" decoding="async" />}
+    {p.image && <img src={p.image.replace(/(-thumb)?\.webp$/, '-card.webp')} width="800" height="533" alt={pick(p.imageAlt, lang) || p.title} loading="lazy" decoding="async" />}
     <span class="cat">{p.categoryLabels.join(' · ')}</span>
     {p.sticker && <span class="hand sticker">{p.sticker}</span>}
     {isVideo && <span class="play" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#1A1714"/></svg></span>}

@@ -30,7 +30,7 @@ const what = (['Photography','Video','Graphic design'] as const).map((c) => [cat
 
   <section aria-label="Showreel and quick links" class="bento">
     <div class="tile reel" id="reel" data-yt="ZVvlu6oplPk" data-title="LOIRE CINEMATIC — Château de Sail-sous-Couzan">
-      <img class="reelimg" src="/images/home/showreel.webp" alt="" width="1600" height="900" loading="eager" />
+      <img class="reelimg" src="/images/home/showreel.webp" alt="" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
       <button type="button" class="reelbtn" aria-label={t('home.showreelAria')}></button>
       <div class="playwrap"><div class="playbtn"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1A1714"/></svg></div></div>
       <div class="press"><span class="hand">{t('home.press')}</span><svg width="64" height="48" viewBox="0 0 64 48" aria-hidden="true"><path d="M4 8c22-2 42 8 50 30M42 34l12 6 3-13" fill="none" stroke="var(--color-orange)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
